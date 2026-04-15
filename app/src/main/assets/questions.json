@@ -10,7 +10,8 @@
         "Configure multiple network interfaces (ENIs) with separate IP addresses and security groups.",
         "Enable antivirus on your EC2 instance."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "iam-access-key-forgotten-001",
@@ -21,7 +22,8 @@
         "Delete the user and recreate them to get new credentials.",
         "Use the 'Forgot Password' option"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Security"
     },
     {
       "id": "billing-cost-allocation-tags-001",
@@ -32,7 +34,8 @@
         "Cost Allocation Tags",
         "Cost Containers"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Pricing and Support"
     },
     {
       "id": "ha-multi-az-001",
@@ -43,7 +46,8 @@
         "It provides isolation for extra security.",
         "Different services can be placed in different zones."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Going Global"
     },
     {
       "id": "global-services-choose-two-001",
@@ -55,7 +59,11 @@
         "IAM",
         "Lightsail"
       ],
-      "correctIndices": [2, 3]
+      "correctIndices": [
+        2,
+        3
+      ],
+      "module": "Going Global"
     },
     {
       "id": "rds-managed-focus-001",
@@ -66,7 +74,8 @@
         "Managed services are self-healing.",
         "Managed services have unlimited scale."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Databases"
     },
     {
       "id": "s3-storage-capacity-001",
@@ -77,7 +86,8 @@
         "Virtually unlimited",
         "100 TB"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "shared-responsibility-ec2-001",
@@ -89,7 +99,11 @@
         "Physical security of hardware",
         "Applications in EC2 instances"
       ],
-      "correctIndices": [1, 4]
+      "correctIndices": [
+        1,
+        4
+      ],
+      "module": "Compute in the Cloud"
     },
     {
       "id": "trusted-advisor-not-area-001",
@@ -100,7 +114,8 @@
         "Fault tolerance",
         "Privacy"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "iaas-benefits-001",
@@ -111,7 +126,8 @@
         "IaaS is fully managed by the provider",
         "Provides rapid innovation capabilities"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Pricing and Support"
     },
     {
       "id": "nodejs-elastic-beanstalk-001",
@@ -122,7 +138,8 @@
         "Lightsail",
         "EC2"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "rds-multi-az-describe-001",
@@ -133,7 +150,8 @@
         "Multi-AZ allows peering connections between VPCs.",
         "Multi-AZ encrypts RDS instance data."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Databases"
     },
     {
       "id": "aws-marketplace-vendor-001",
@@ -144,7 +162,8 @@
         "AWS Lambda",
         "AWS Marketplace"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Pricing and Support"
     },
     {
       "id": "ec2-autoscaling-opex-001",
@@ -155,7 +174,8 @@
         "Deploy Amazon EC2 instances with Auto Scaling.",
         "Deploy Amazon EC2 instances with Cluster placement groups."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "patch-os-customer-001",
@@ -166,7 +186,8 @@
         "Amazon DynamoDB",
         "AWS Fargate"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "managed-vs-ec2-benefits-001",
@@ -177,7 +198,11 @@
         "Reduced operational overhead",
         "Automated backups"
       ],
-      "correctIndices": [0, 2]
+      "correctIndices": [
+        0,
+        2
+      ],
+      "module": "Compute in the Cloud"
     },
     {
       "id": "cloudhsm-purpose-001",
@@ -188,7 +213,8 @@
         "It acts as an interface between the user and the computer.",
         "It is used to generate, use, and manage encryption keys in the cloud."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Security"
     },
     {
       "id": "billing-dashboard-forecast-001",
@@ -199,7 +225,8 @@
         "Savings Plans",
         "Cost Categories"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Pricing and Support"
     },
     {
       "id": "s3-regional-disaster-crr-001",
@@ -210,7 +237,8 @@
         "Use Cross-Region Replication (CRR)",
         "Use bucket policy"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "cloud-efficient-resources-001",
@@ -221,7 +249,8 @@
         "Resources are unlimited.",
         "Unused resources are terminated daily."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Going Global"
     },
     {
       "id": "rds-vs-ec2-benefits-001",
@@ -232,7 +261,11 @@
         "Cost savings",
         "Automatic backup"
       ],
-      "correctIndices": [0, 3]
+      "correctIndices": [
+        0,
+        3
+      ],
+      "module": "Databases"
     },
     {
       "id": "aws-budget-ceiling-001",
@@ -243,7 +276,8 @@
         "Cost Budgets",
         "Usage Budgets"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Pricing and Support"
     },
     {
       "id": "cloud-innovation-focus-001",
@@ -254,7 +288,8 @@
         "Resources can be provisioned on demand.",
         "The cloud provider handles routine IT tasks."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Going Global"
     },
     {
       "id": "onprem-backup-storage-gateway-001",
@@ -265,7 +300,8 @@
         "AWS Snow",
         "AWS Containers"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Going Global"
     },
     {
       "id": "ec2-not-optimized-type-001",
@@ -276,7 +312,8 @@
         "Compute optimized",
         "Memory optimized"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "rds-not-dynamodb-001",
@@ -287,7 +324,8 @@
         "Oracle",
         "PostgreSQL"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Databases"
     },
     {
       "id": "iam-same-rights-group-001",
@@ -298,7 +336,8 @@
         "Create each user in IAM and assign the proper roles.",
         "Make each their own AWS account and share access to the main account."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Security"
     },
     {
       "id": "ebs-storage-types-choose-two-001",
@@ -310,7 +349,11 @@
         "NAS",
         "HDD"
       ],
-      "correctIndices": [0, 4]
+      "correctIndices": [
+        0,
+        4
+      ],
+      "module": "Storage"
     },
     {
       "id": "autoscaling-launch-locations-001",
@@ -321,7 +364,11 @@
         "Multiple availability zones within a region",
         "Everywhere, there are no constraints"
       ],
-      "correctIndices": [0, 2]
+      "correctIndices": [
+        0,
+        2
+      ],
+      "module": "Compute in the Cloud"
     },
     {
       "id": "apn-consulting-no-aws-expert-001",
@@ -332,7 +379,8 @@
         "Amazon Inspector",
         "AWS Trusted Advisor"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Pricing and Support"
     },
     {
       "id": "professional-services-paid-adoption-001",
@@ -343,7 +391,8 @@
         "AWS Technical Account Manager",
         "Concierge Support"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Pricing and Support"
     },
     {
       "id": "billing-cost-explorer-12mo-forecast-001",
@@ -354,7 +403,8 @@
         "AWS Budgets",
         "Cost Projections"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Pricing and Support"
     },
     {
       "id": "trusted-advisor-unused-ec2-001",
@@ -365,7 +415,8 @@
         "AWS Trusted Advisor",
         "AWS Config"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "service-catalog-multitier-001",
@@ -376,7 +427,8 @@
         "AWS CodeDeploy",
         "AWS CloudFormation"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "quicksight-dashboards-001",
@@ -387,7 +439,8 @@
         "Amazon QuickSight",
         "Amazon Athena with Amazon Glue"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "acm-cert-renewal-001",
@@ -398,7 +451,8 @@
         "AWS License Manager",
         "AWS Certificate Manager"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Security"
     },
     {
       "id": "iam-best-practices-choose-two-001",
@@ -409,7 +463,11 @@
         "Customer-managed policies",
         "Use service accounts"
       ],
-      "correctIndices": [1, 3]
+      "correctIndices": [
+        1,
+        3
+      ],
+      "module": "Security"
     },
     {
       "id": "console-mfa-login-001",
@@ -420,7 +478,8 @@
         "Enable multi-factor authentication",
         "Use Amazon Cloud Directory"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Going Global"
     },
     {
       "id": "shared-responsibility-customer-two-001",
@@ -431,7 +490,11 @@
         "Physical security of data center facilities",
         "Patching the EC2 Operating System"
       ],
-      "correctIndices": [1, 3]
+      "correctIndices": [
+        1,
+        3
+      ],
+      "module": "Security"
     },
     {
       "id": "az-advantage-low-latency-001",
@@ -442,7 +505,8 @@
         "Availability Zones automatically replicate data across zones",
         "Availability Zones provide unlimited storage capacity"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Going Global"
     },
     {
       "id": "cloudwatch-alarms-sns-001",
@@ -453,7 +517,8 @@
         "Amazon Route 53",
         "Amazon Simple Notification Service (Amazon SNS)"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "s3-bucket-names-true-001",
@@ -464,7 +529,8 @@
         "Bucket names can span multiple regions but must have a unique name.",
         "Bucket names must be unique within your account and region."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Storage"
     },
     {
       "id": "trusted-advisor-idle-cost-001",
@@ -475,7 +541,8 @@
         "AWS Cost Explorer",
         "AWS Config"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "route53-dns-health-001",
@@ -486,7 +553,8 @@
         "AWS DNS",
         "CloudFront"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Networking"
     },
     {
       "id": "sns-topic-subscribers-001",
@@ -497,7 +565,11 @@
         "Amazon S3",
         "AWS Lambda"
       ],
-      "correctIndices": [0, 3]
+      "correctIndices": [
+        0,
+        3
+      ],
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "elb-unhealthy-instance-001",
@@ -508,7 +580,8 @@
         "It continues to send traffic to the failed instance.",
         "It terminates the failed instance so that it is not part of the ELB target group."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Networking"
     },
     {
       "id": "workspaces-daas-001",
@@ -519,7 +592,8 @@
         "AWS OfficeSpace",
         "WorkSpaces"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "cloud-concept-reusability-001",
@@ -530,7 +604,8 @@
         "Interoperability",
         "Modularization"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Well-Architected Solutions"
     },
     {
       "id": "security-group-change-running-001",
@@ -541,7 +616,8 @@
         "You can change only the Default Security Group.",
         "You can change a Security Group associated with an instance if the instance is in the running state."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Networking"
     },
     {
       "id": "storage-glacier-deep-archive-001",
@@ -552,7 +628,8 @@
         "S3 Glacier Deep Archive",
         "Amazon S3 Glacier"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "cost-explorer-forecast-spend-001",
@@ -563,7 +640,8 @@
         "Amazon DevPay",
         "AWS Organizations"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Pricing and Support"
     },
     {
       "id": "least-privilege-principle-001",
@@ -574,7 +652,8 @@
         "Users should be granted permission to access only the resources they need for their job.",
         "Users should submit all access requests in writing for an audit trail."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Security"
     },
     {
       "id": "secrets-manager-true-two-001",
@@ -586,7 +665,11 @@
         "It replaces IAM users and roles.",
         "It retrieves authentication information from a central repository using an API call."
       ],
-      "correctIndices": [0, 4]
+      "correctIndices": [
+        0,
+        4
+      ],
+      "module": "Security"
     },
     {
       "id": "cloudfront-geolocation-personalization-001",
@@ -597,7 +680,8 @@
         "Amazon EC2",
         "AWS Global Accelerator"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Networking"
     },
     {
       "id": "elastic-beanstalk-documentation-001",
@@ -608,7 +692,8 @@
         "Knowledge Center",
         "Documentation"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Pricing and Support"
     },
     {
       "id": "personal-health-dashboard-maintenance-001",
@@ -619,7 +704,8 @@
         "AWS Trusted Advisor",
         "AWS Organizations"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "ec2-s3-access-iam-role-001",
@@ -630,7 +716,8 @@
         "Using an IAM role",
         "Using Bucket Permissions"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Security"
     },
     {
       "id": "ec2-pricing-uncertain-traffic-001",
@@ -641,7 +728,8 @@
         "Reserved Instances",
         "Spot Instances"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ec2-autoscaling-how-works-001",
@@ -652,7 +740,8 @@
         "Amazon EC2 Auto Scaling adjusts the instance type but does not change the number of instances.",
         "Amazon EC2 Auto Scaling requires manual intervention to add or remove instances based on traffic."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "savings-plans-spot-workloads-001",
@@ -663,7 +752,8 @@
         "Use Savings Plans for all workloads and avoid Spot Instances because of interruption risks.",
         "Use Savings Plans for critical workloads and Spot Instances for jobs that are not time-sensitive to maximize savings."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "cloud-compute-provisioning-001",
@@ -674,7 +764,8 @@
         "Resources must be pre-purchased and installed onsite.",
         "Compute resources require constant manual management."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ec2-multi-tenancy-001",
@@ -685,7 +776,8 @@
         "Each EC2 instance running in its own private network",
         "EC2 instances dedicated to individual clients"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ami-role-scaling-001",
@@ -696,7 +788,8 @@
         "It automatically manages network traffic.",
         "It provides a consistent image to launch new instances."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "bug-tracking-sns-notify-001",
@@ -707,7 +800,8 @@
         "Amazon Simple Queue Service (Amazon SQS)",
         "Amazon EC2"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "general-purpose-ec2-startup-001",
@@ -718,7 +812,8 @@
         "It is designed for high storage capacity, which is needed to host large databases.",
         "It is specifically designed for memory-intensive applications, which is ideal for hosting a web application."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "autoscaling-elb-together-001",
@@ -729,7 +824,8 @@
         "Amazon EC2 Auto Scaling handles traffic routing, whereas ELB manages instance scaling.",
         "They operate independently and are not connected."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "predictable-workloads-ri-001",
@@ -740,7 +836,8 @@
         "Reserved Instances",
         "On-Demand"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "aws-gui-console-001",
@@ -751,7 +848,8 @@
         "AWS Command Line Interface (AWS CLI)",
         "Amazon EC2"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ec2-accelerated-rendering-001",
@@ -762,7 +860,8 @@
         "Memory optimized",
         "Compute optimized"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "loosely-coupled-failure-001",
@@ -773,7 +872,8 @@
         "The system can continue to function as other components are independent.",
         "Other components must be manually restarted."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Well-Architected Solutions"
     },
     {
       "id": "compute-optimized-climate-001",
@@ -784,7 +884,8 @@
         "They provide high storage throughput, making them ideal for tasks that require fast data retrieval and storage for large datasets.",
         "They are designed for workloads that require a high amount of memory to process large datasets efficiently."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ec2-memory-optimized-analytics-001",
@@ -795,7 +896,8 @@
         "Storage optimized",
         "Memory optimized"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ec2-storage-optimized-retail-001",
@@ -806,7 +908,8 @@
         "Accelerated computing",
         "Storage optimized"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "aws-cli-advantage-vs-console-001",
@@ -817,7 +920,8 @@
         "It is only available for Windows users.",
         "It requires fewer configurations and is ideal for one-time manual provisioning."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "shared-responsibility-ec2-customer-001",
@@ -828,7 +932,8 @@
         "AWS is responsible for managing the operating system, networking, and applications on the customer's EC2 instances.",
         "The customer is responsible for configuring, securing, and managing the operating system, networking, and applications on their EC2 instances."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ec2-launch-webserver-three-001",
@@ -841,7 +946,12 @@
         "Storage",
         "Instance termination behavior"
       ],
-      "correctIndices": [0, 2, 4]
+      "correctIndices": [
+        0,
+        2,
+        4
+      ],
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ami-purpose-launch-ec2-001",
@@ -852,7 +962,8 @@
         "To pre-configure the operating system and software",
         "To store instance data"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "dedicated-hosts-compliance-001",
@@ -863,7 +974,8 @@
         "On Demand",
         "Spot Instances"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "spot-instances-batch-interruptible-001",
@@ -874,7 +986,8 @@
         "On Demand",
         "Spot Instances"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "on-demand-unsure-usage-001",
@@ -885,7 +998,8 @@
         "On Demand",
         "Spot Instances"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "scalability-elasticity-benefit-001",
@@ -896,7 +1010,8 @@
         "The ability to create fixed resources that never change in size",
         "The ability to permanently increase resource capacity for long-term growth"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Going Global"
     },
     {
       "id": "ec2-multiple-az-reason-001",
@@ -907,7 +1022,8 @@
         "To decrease the cost of instances by distributing them evenly across AWS Regions",
         "To automatically scale instances based on resource usage in each Availability Zone"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Going Global"
     },
     {
       "id": "fluctuating-demand-auto-scale-001",
@@ -918,7 +1034,8 @@
         "By requiring businesses to purchase excess resources in advance to handle peak demand",
         "By offering resources that are always running, regardless of demand"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Going Global"
     },
     {
       "id": "elb-scalability-routing-001",
@@ -929,7 +1046,8 @@
         "It directly increases the size of Amazon EC2 instances.",
         "It creates new Amazon EC2 instances for each request."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Networking"
     },
     {
       "id": "elb-task-distributes-001",
@@ -940,7 +1058,8 @@
         "Removes unneeded Amazon EC2 instances when demand is low.",
         "Adds a second Amazon EC2 instance during an online store's popular sale."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Networking"
     },
     {
       "id": "tightly-vs-loosely-coupled-001",
@@ -951,7 +1070,8 @@
         "Tightly coupled architectures are designed for scalability, whereas loosely coupled systems focus on maintaining high availability.",
         "Loosely coupled systems require components to share data directly with each other, whereas tightly coupled systems store data in a central repository."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Well-Architected Solutions"
     },
     {
       "id": "sqs-banking-fraud-scenario-001",
@@ -962,7 +1082,8 @@
         "It speeds up transaction processing by avoiding the use of a buffer.",
         "It forces the transaction service and fraud detection service to depend on each other directly."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "lambda-team-responsibility-001",
@@ -973,7 +1094,8 @@
         "Managing data access permissions",
         "Managing server availability"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "lambda-photo-workflow-three-001",
@@ -986,7 +1108,12 @@
         "Manual scaling configuration",
         "Operating system selection"
       ],
-      "correctIndices": [0, 1, 3]
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "module": "Compute in the Cloud"
     },
     {
       "id": "containers-dev-environment-001",
@@ -997,7 +1124,8 @@
         "By automatically scaling the application across multiple cloud providers",
         "By eliminating the need to write configuration files"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "container-services-match-001",
@@ -1020,7 +1148,8 @@
           "term": "AWS Fargate",
           "definition": "Serverless compute engine for containers—removes the need to manage servers."
         }
-      ]
+      ],
+      "module": "Compute in the Cloud"
     },
     {
       "id": "compute-services-match-002",
@@ -1043,7 +1172,8 @@
           "term": "AWS Outposts",
           "definition": "A hybrid cloud service extending AWS to on premises"
         }
-      ]
+      ],
+      "module": "Compute in the Cloud"
     },
     {
       "id": "elastic-beanstalk-startup-deploy-001",
@@ -1054,7 +1184,8 @@
         "AWS Batch",
         "AWS Outposts"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "outposts-compliance-hybrid-001",
@@ -1065,7 +1196,8 @@
         "AWS Batch",
         "AWS Outposts"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "containers-consistent-env-ecommerce-001",
@@ -1076,7 +1208,8 @@
         "Use different versions of the applications for different environments.",
         "Set up separate environments for each operating system."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "aws-batch-protein-simulations-001",
@@ -1087,7 +1220,8 @@
         "Amazon Lightsail",
         "AWS Elastic Beanstalk"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ecr-ecs-eks-orchestration-001",
@@ -1098,7 +1232,8 @@
         "Amazon EC2 with auto scaling",
         "An orchestration service like Amazon Elastic Container Service (Amazon ECS) or Amazon Elastic Kubernetes Service (Amazon EKS)"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "serverless-model-microservice-001",
@@ -1109,7 +1244,8 @@
         "On premises",
         "Hybrid cloud"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "lambda-s3-upload-images-001",
@@ -1120,7 +1256,8 @@
         "Automatically processing images as users upload them to an Amazon S3 bucket",
         "Running a large, high-performance computing workload that takes several hours to complete"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "ecr-eks-fargate-container-001",
@@ -1131,7 +1268,8 @@
         "Amazon Elastic Container Registry (Amazon ECR), Amazon Elastic Container Service (Amazon ECS), and Amazon EC2",
         "Amazon Elastic Container Registry (Amazon ECR), Amazon Elastic Kubernetes Service (Amazon EKS), and AWS Fargate"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "lambda-customer-responsibility-serverless-001",
@@ -1142,7 +1280,8 @@
         "The operating system, network configuration, and application stack",
         "Nothing—AWS manages everything"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "lightsail-blog-minimal-traffic-001",
@@ -1153,7 +1292,8 @@
         "AWS Batch",
         "AWS Lambda"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "region-selection-factors-two-001",
@@ -1165,7 +1305,11 @@
         "Personal preference of the chief information officer",
         "How recently the Region was constructed"
       ],
-      "correctIndices": [0, 1]
+      "correctIndices": [
+        0,
+        1
+      ],
+      "module": "Going Global"
     },
     {
       "id": "global-infrastructure-match-001",
@@ -1184,7 +1328,8 @@
           "term": "Edge location",
           "definition": "Locations that cache content to deliver data, video, and applications to users with lower latency"
         }
-      ]
+      ],
+      "module": "Going Global"
     },
     {
       "id": "cloudformation-startup-complex-infra-001",
@@ -1195,7 +1340,8 @@
         "CloudFormation should be used only for setting up static websites, not for complex applications.",
         "CloudFormation is too complicated and would slow down the deployment process."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Going Global"
     },
     {
       "id": "edge-locations-purpose-001",
@@ -1206,7 +1352,8 @@
         "Edge locations are used exclusively for running compute-intensive applications and databases.",
         "Edge locations are composed of physical data centers that host the majority of AWS services and applications."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Going Global"
     },
     {
       "id": "nonprofit-region-factors-001",
@@ -1217,7 +1364,8 @@
         "Compliance, proximity to customers, feature availability, and pricing",
         "Software licensing, hardware specifications, cloud skillset of staff, and customer reviews"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Going Global"
     },
     {
       "id": "iac-cloudformation-multi-region-001",
@@ -1228,7 +1376,8 @@
         "Combining console and programmatic approaches for different tiers of the application",
         "Using the AWS Management Console to manually deploy each component in every Region"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Going Global"
     },
     {
       "id": "cloudformation-features-benefits-001",
@@ -1239,7 +1388,8 @@
         "With CloudFormation, users can model and set up their AWS resources using code to automate provisioning and the management of infrastructure. This method can help to reduce errors and maintain consistency across environments.",
         "CloudFormation is a service that provides a visual interface for manually configuring each AWS resource one by one, without the need for any code."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Going Global"
     },
     {
       "id": "regions-az-edge-relationship-001",
@@ -1250,7 +1400,8 @@
         "AWS Regions are physical locations around the world where AWS has multiple Availability Zones. Each Availability Zone has one or more edge location.",
         "AWS Regions contain multiple edge locations, and each edge location can have one or more Availability Zones."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Going Global"
     },
     {
       "id": "multi-region-az-benefits-two-001",
@@ -1262,7 +1413,11 @@
         "Low latency for end users",
         "High availability and fault tolerance"
       ],
-      "correctIndices": [3, 4]
+      "correctIndices": [
+        3,
+        4
+      ],
+      "module": "Going Global"
     },
     {
       "id": "vpc-subnet-uses-three-001",
@@ -1275,7 +1430,12 @@
         "Can be used to isolate resources and keep them private",
         "Can be used as an on-demand and scalable computing capacity in the AWS Cloud"
       ],
-      "correctIndices": [0, 1, 4]
+      "correctIndices": [
+        0,
+        1,
+        4
+      ],
+      "module": "Networking"
     },
     {
       "id": "vpc-vpn-private-subnet-001",
@@ -1286,7 +1446,8 @@
         "An internet gateway with an Amazon VPC and no subnets",
         "An internet gateway with an Amazon VPC and a public subnet"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Networking"
     },
     {
       "id": "direct-connect-migration-hybrid-001",
@@ -1297,7 +1458,8 @@
         "AWS Direct Connect link to their on-premises network and the AWS Cloud",
         "AWS Private Link to their on-premises datacenter"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Networking"
     },
     {
       "id": "vpc-gateway-vpn-approved-network-001",
@@ -1308,7 +1470,8 @@
         "AWS Transit Gateway",
         "Amazon API Gateway"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Networking"
     },
     {
       "id": "ec2-public-subnet-security-groups-001",
@@ -1319,7 +1482,8 @@
         "Set up network ACLs for the EC2 instances based on the application requirements.",
         "Set up a public subnet with strong passwords that meet the customer's requirements."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Networking"
     },
     {
       "id": "network-acl-stateless-filtering-001",
@@ -1330,7 +1494,8 @@
         "Amazon VPC",
         "Security groups"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Networking"
     },
     {
       "id": "cloudfront-sales-training-low-latency-001",
@@ -1341,7 +1506,8 @@
         "Amazon CloudFront",
         "AWS Global Accelerator"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Networking"
     },
     {
       "id": "route53-domain-management-001",
@@ -1352,7 +1518,8 @@
         "Amazon CloudFront",
         "AWS Global Accelerator"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Networking"
     },
     {
       "id": "direct-connect-healthcare-compliance-001",
@@ -1363,7 +1530,8 @@
         "VPN connection from their corporate data center to a virtual private gateway to their Amazon VPC",
         "AWS Direct Connect connection from their corporate data center to a virtual private gateway in their VPC in the AWS Cloud"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Networking"
     },
     {
       "id": "global-accelerator-edge-networking-routing-001",
@@ -1374,7 +1542,8 @@
         "Amazon CloudFront",
         "AWS Global Accelerator"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Networking"
     },
     {
       "id": "ec2-instance-store-high-io-temporary-001",
@@ -1385,7 +1554,8 @@
         "EC2 instance store provides a persistent storage solution that survives instance failures.",
         "EC2 instance store allows storage to be conveniently shared between multiple EC2 instances simultaneously."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Storage"
     },
     {
       "id": "ebs-finance-persistent-block-suitable-001",
@@ -1396,7 +1566,8 @@
         "Amazon EBS provides unlimited input/output operations per second (IOPS) for all volume types, regardless of size.",
         "Amazon EBS provides high availability and durability by automatically replicating volumes within the same Availability Zone."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Storage"
     },
     {
       "id": "ebs-software-persistence-vm-crash-001",
@@ -1407,7 +1578,8 @@
         "Amazon EBS volumes exist independently from the instance and persist even after the instance is terminated.",
         "Amazon EBS automatically backs up all data to Amazon S3 every hour to help ensure persistence."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "ebs-snapshots-test-environments-commerce-001",
@@ -1418,7 +1590,8 @@
         "EBS snapshots reduce your storage costs by compressing all data on your EBS volumes by up to 90 percent.",
         "EBS snapshots automatically migrate your data to different AWS Regions for improved global access speeds."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Storage"
     },
     {
       "id": "dlm-healthcare-ebs-snapshots-retention-001",
@@ -1429,7 +1602,8 @@
         "Automating the creation, retention, and deletion of EBS snapshots and EBS backed Amazon Machine Images (AMIs) according to a schedule",
         "Migrating patient data from on-premises storage to AWS Cloud storage"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "s3-mobile-app-storage-aspects-001",
@@ -1440,7 +1614,8 @@
         "Real-time data streaming and message processing",
         "Storing and distributing mobile application content and user-generated media files"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Storage"
     },
     {
       "id": "s3-marketing-public-access-block-001",
@@ -1451,7 +1626,8 @@
         "They need to enable the website hosting feature to make any Amazon S3 content public.",
         "The S3 bucket must be in the same AWS Region as the users trying to access the content."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Storage"
     },
     {
       "id": "s3-media-durability-video-distribution-001",
@@ -1462,7 +1638,8 @@
         "Amazon S3 limits individual object sizes to 5 GB, requiring companies to split large video files before upload.",
         "Amazon S3 provides built-in video transcoding services that automatically convert videos to different formats when they are uploaded."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Storage"
     },
     {
       "id": "s3-business-lifecycle-tiering-cost-001",
@@ -1473,7 +1650,8 @@
         "Create a lifecycle rule to delete all objects after 90 days and rely on database backups.",
         "Create multiple S3 buckets with different storage classes and manually move objects between buckets as they age."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Storage"
     },
     {
       "id": "s3-lifecycle-definition-001",
@@ -1484,7 +1662,8 @@
         "A monitoring system that alerts administrators when Amazon S3 objects have not been accessed for a specified period.",
         "A feature used to define rules to automatically transition objects between different storage classes, or delete them based on age or usage patterns."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Storage"
     },
     {
       "id": "efs-financial-elastic-capacity-market-data-001",
@@ -1495,7 +1674,8 @@
         "Amazon EFS provides elastic storage capacity, automatically scaling up and down as files are added and removed, with no disruption to applications.",
         "Amazon EFS provides automatic global replication of data, eliminating the need for data backups."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "efs-retail-shared-access-collaboration-001",
@@ -1506,7 +1686,8 @@
         "Amazon EFS provides block storage that can be formatted with any file system.",
         "Amazon EFS offers single-instance access with high throughput for dedicated processing."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Storage"
     },
     {
       "id": "fsx-windows-smb-active-directory-001",
@@ -1517,7 +1698,8 @@
         "Amazon FSx for Windows File Server",
         "Amazon Elastic Block Store (Amazon EBS)"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "storage-gateway-anycompany-files-s3-file-gateway-001",
@@ -1528,7 +1710,8 @@
         "Volume Gateway in Stored mode",
         "Tape Gateway"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Storage"
     },
     {
       "id": "storage-gateway-manufacturing-cad-cached-volume-001",
@@ -1539,7 +1722,8 @@
         "Deploy Amazon FSx for Windows File Server in the on-premises data center.",
         "Implement Storage Gateway in Cached Volume mode to keep frequently accessed data local while storing the complete dataset in Amazon S3."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Storage"
     },
     {
       "id": "elastic-disaster-recovery-telecom-benefit-001",
@@ -1550,7 +1734,8 @@
         "Continuous block-level replication with frequent backup intervals, providing near-instant recovery of servers at the target AWS Region",
         "Elimination of source-side agents by using existing backup software"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "s3-storage-classes-primary-function-001",
@@ -1561,7 +1746,8 @@
         "To organize objects within buckets hierarchically",
         "To provide different storage options optimized for different use cases and access patterns"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Storage"
     },
     {
       "id": "ebs-commerce-dynamic-expand-backup-001",
@@ -1572,7 +1758,8 @@
         "Amazon Elastic Block Store (Amazon EBS)",
         "Amazon FSx"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "elastic-disaster-recovery-definition-001",
@@ -1583,7 +1770,8 @@
         "A service that minimizes downtime and data loss by providing fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery",
         "A backup service that creates periodic snapshots of AWS resources and stores them in Amazon S3 buckets"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "storage-gateway-definition-001",
@@ -1594,7 +1782,8 @@
         "A physical hardware appliance that must be installed in a data center",
         "A hybrid cloud storage solution that provides on-premises applications with access to virtually unlimited cloud storage"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Storage"
     },
     {
       "id": "ebs-snapshots-software-backup-testing-dr-001",
@@ -1605,7 +1794,8 @@
         "Amazon S3 Glacier Flexible Retrieval",
         "EBS snapshots"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Storage"
     },
     {
       "id": "s3-definition-best-describes-001",
@@ -1616,7 +1806,8 @@
         "A storage service primarily designed for long-term archival and backup of data that is rarely accessed.",
         "A block-level storage service that provides persistent storage for Amazon EC2 instances."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Storage"
     },
     {
       "id": "storage-gateway-manufacturing-drawings-file-gateway-001",
@@ -1627,7 +1818,8 @@
         "AWS Storage Gateway – File Gateway",
         "Amazon Elastic File System (Amazon EFS)"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "s3-storage-classes-pricing-characteristic-001",
@@ -1638,7 +1830,8 @@
         "Pricing is exclusively determined by the geographic region of the bucket.",
         "All storage classes cost the same but differ in retrieval speed."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Storage"
     },
     {
       "id": "ec2-instance-store-ai-ml-training-temporary-001",
@@ -1649,7 +1842,8 @@
         "Amazon Elastic Block Store (Amazon EBS)",
         "Amazon Elastic File System (Amazon EFS)"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Storage"
     },
     {
       "id": "ebs-definition-best-describes-001",
@@ -1660,7 +1854,8 @@
         "A block-level storage service that provides persistent storage volumes for Amazon EC2 instances",
         "An in-memory cache used to improve database performance"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "efs-definition-best-describes-001",
@@ -1671,7 +1866,8 @@
         "A fully managed, elastic file system that scales automatically as files are added and removed",
         "An object storage service designed for long-term archival of rarely accessed data"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "fsx-definition-best-describes-001",
@@ -1682,7 +1878,8 @@
         "An object storage solution designed for archiving rarely accessed data",
         "A service used to set up private file sharing within an on-premises data center only"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Storage"
     },
     {
       "id": "s3-marketing-campaign-assets-distribution-001",
@@ -1693,7 +1890,8 @@
         "Amazon S3",
         "Amazon Elastic Block Storage (Amazon EBS)"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "efs-technology-linux-shared-development-storage-001",
@@ -1704,7 +1902,8 @@
         "Amazon S3",
         "Amazon Elastic Block Store (Amazon EBS)"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Storage"
     },
     {
       "id": "fsx-windows-marketing-file-shares-smb-ad-001",
@@ -1715,7 +1914,8 @@
         "Amazon S3",
         "Amazon Elastic File System (Amazon EFS)"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Storage"
     },
     {
       "id": "rds-managed-vs-ec2-logistics-focus-001",
@@ -1726,7 +1926,8 @@
         "Choose the self-hosted database on Amazon EC2, because it will always provide better performance for ecommerce applications.",
         "Choose the managed database service, because it will automatically optimize the company's application code."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Databases"
     },
     {
       "id": "rds-retail-multi-az-minimal-downtime-001",
@@ -1737,7 +1938,8 @@
         "Fixed storage allocation",
         "Multi-AZ deployments"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Databases"
     },
     {
       "id": "aurora-financial-mysql-throughput-scenario-001",
@@ -1748,7 +1950,8 @@
         "Aurora provides a high-performance, highly available storage architecture that offers up to five times the throughput of standard MySQL.",
         "Aurora offers a centralized storage system that eliminates network latency between instances."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Databases"
     },
     {
       "id": "elasticache-problem-solves-latency-throughput-001",
@@ -1759,7 +1962,8 @@
         "Secure storage of application credentials and secrets",
         "Cost optimization of infrequently accessed data"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Databases"
     },
     {
       "id": "aws-backup-main-problem-fragmented-001",
@@ -1770,7 +1974,8 @@
         "Fragmented backup approaches across different AWS services",
         "Complex machine learning model development"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Storage"
     },
     {
       "id": "documentdb-primary-feature-mongodb-001",
@@ -1781,7 +1986,8 @@
         "AWS Lambda integration",
         "Amazon EC2 hosting"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Databases"
     },
     {
       "id": "neptune-benefit-connected-data-latency-001",
@@ -1792,7 +1998,8 @@
         "Automatic translation of SQL queries to graph queries",
         "Low-latency queries on highly connected data"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Databases"
     },
     {
       "id": "shared-responsibility-managed-database-customer-001",
@@ -1803,7 +2010,8 @@
         "Customers are responsible for designing data structures and managing access controls.",
         "Customers are responsible for monitoring and generating metrics for their data."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Databases"
     },
     {
       "id": "dynamodb-definition-best-describes-001",
@@ -1814,7 +2022,8 @@
         "DynamoDB is a fully managed NoSQL key-value and document database that provides fast, predictable performance with seamless scalability.",
         "DynamoDB is a column-oriented database that requires schema definition before storing data."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Databases"
     },
     {
       "id": "in-memory-caching-definition-001",
@@ -1825,7 +2034,8 @@
         "A database management system that permanently stores all application data on solid-state drives for consistent retrieval speeds",
         "A backup and recovery service that automatically creates snapshots of critical data every five minutes to prevent data loss"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Databases"
     },
     {
       "id": "aws-backup-feature-centralized-policies-001",
@@ -1836,7 +2046,8 @@
         "AWS Backup is limited to database services only.",
         "AWS Backup requires manual configuration for each individual resource."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Storage"
     },
     {
       "id": "elasticache-primary-benefit-in-memory-performance-001",
@@ -1847,7 +2058,8 @@
         "Improved application performance through in-memory caching",
         "Built-in machine learning capabilities for data analysis"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Databases"
     },
     {
       "id": "rds-definition-best-describes-001",
@@ -1858,7 +2070,8 @@
         "A data warehousing solution for analytical processing",
         "A fully managed in-memory caching service that seamlessly integrates with Redis, Valkey, or Memcached"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Databases"
     },
     {
       "id": "neptune-practical-use-connected-datasets-001",
@@ -1869,7 +2082,8 @@
         "Optimizing text search in large document databases",
         "Providing real-time streaming analytics"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Databases"
     },
     {
       "id": "aurora-use-case-commercial-database-replacement-001",
@@ -1880,7 +2094,8 @@
         "Running temporary databases with minimal availability requirements for development environments",
         "Storing static, rarely accessed data that requires minimal processing capabilities"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Databases"
     },
     {
       "id": "documentdb-use-case-ecommerce-catalog-001",
@@ -1891,7 +2106,8 @@
         "Storing and managing a large product catalog for an ecommerce application",
         "Real-time in-memory caching of web session data"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Databases"
     },
     {
       "id": "ec2-unmanaged-database-full-control-preference-001",
@@ -1902,7 +2118,8 @@
         "A developer has a database size smaller than the maximum limits imposed by Amazon RDS.",
         "A developer wants AWS to handle routine database maintenance tasks like backups and patching."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Databases"
     },
     {
       "id": "nosql-vs-relational-flexible-schema-001",
@@ -1913,7 +2130,8 @@
         "Relational databases provide automatic scaling and NoSQL databases require manual scaling.",
         "Relational databases require indexes on all queries, and NoSQL databases do not use indexes."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Databases"
     },
     {
       "id": "dms-problem-minimize-migration-downtime-001",
@@ -1924,7 +2142,8 @@
         "Providing a graphical interface for database administrators to design tables",
         "Creating automated database backup schedules"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "dynamodb-staffing-unpredictable-traffic-autoscaling-001",
@@ -1935,7 +2154,8 @@
         "Fixed storage limit allocation",
         "Predefined schema enforcement"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Databases"
     },
     {
       "id": "ml-training-process-output-model-001",
@@ -1946,7 +2166,8 @@
         "An ML data report that summarizes the data",
         "An ML database cataloging the types of data found"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "comprehend-car-dealership-customer-sentiment-001",
@@ -1957,7 +2178,8 @@
         "Amazon Personalize",
         "Amazon Textract"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "lex-healthcare-conversational-interface-001",
@@ -1968,7 +2190,8 @@
         "Amazon Lex",
         "Amazon Comprehend"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "polly-instructional-designer-text-to-speech-001",
@@ -1979,7 +2202,8 @@
         "Amazon Translate",
         "Amazon Polly"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "sagemaker-ai-custom-ml-no-infrastructure-001",
@@ -1990,7 +2214,8 @@
         "Amazon EC2",
         "Amazon Lex"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "ml-framework-pytorch-definition-001",
@@ -2001,7 +2226,8 @@
         "An integrated development environment (IDE) that provides simplified access to the company's ML projects",
         "A managed service pre-trained to perform specific functions"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "generative-ai-foundation-models-definition-001",
@@ -2012,7 +2238,8 @@
         "Massive models",
         "Foundation models"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "bedrock-advertising-content-generation-001",
@@ -2023,7 +2250,8 @@
         "Amazon Q Business",
         "Amazon Q Developer"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "q-developer-software-deadline-code-001",
@@ -2034,7 +2262,8 @@
         "Amazon Q Business",
         "Amazon Q Developer"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "etl-data-pipelines-definition-001",
@@ -2045,7 +2274,8 @@
         "Evaluate, test, launch",
         "Export, translate, link"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "data-analytics-transformed-data-insights-001",
@@ -2056,7 +2286,8 @@
         "Personal customer information",
         "Valuable insights and trends"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "data-pipeline-ingestion-kinesis-firehose-001",
@@ -2068,7 +2299,11 @@
         "AWS Glue Data Catalog",
         "Amazon Data Firehose"
       ],
-      "correctIndices": [1, 4]
+      "correctIndices": [
+        1,
+        4
+      ],
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "s3-unstructured-data-pipeline-storage-001",
@@ -2079,7 +2314,8 @@
         "Amazon Data Firehose",
         "Amazon S3"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "glue-data-pipeline-processing-001",
@@ -2090,7 +2326,8 @@
         "Amazon Data Firehose",
         "Amazon S3"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "data-visualization-quicksight-opensearch-001",
@@ -2102,7 +2339,11 @@
         "AWS Glue",
         "Amazon OpenSearch Service"
       ],
-      "correctIndices": [1, 4]
+      "correctIndices": [
+        1,
+        4
+      ],
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "data-pipeline-etl-efficient-repeatable-001",
@@ -2113,7 +2354,8 @@
         "Data pipelines eliminate the need for data transformations.",
         "Data pipelines reduce the variety of data sources used by ETL."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "s3-redshift-data-lake-warehouse-001",
@@ -2124,7 +2366,8 @@
         "Amazon Redshift is a popular choice for data lakes, whereas Amazon S3 is a data warehouse service.",
         "Amazon EMR is a popular choice for data lakes, whereas Amazon Redshift is a data warehouse service."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "bedrock-foundation-models-single-api-001",
@@ -2135,7 +2378,8 @@
         "Free, unlimited use",
         "Dedicated cloud storage"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "classical-programming-vs-machine-learning-001",
@@ -2146,7 +2390,8 @@
         "Classical programming creates explicit rules for the computer to follow. In machine learning, computers make predictions using patterns learned from historical data.",
         "Classical programming is used for simple tasks, whereas machine learning is reserved for extremely complex tasks."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "kinesis-financial-real-time-stock-data-001",
@@ -2157,7 +2402,8 @@
         "Amazon Athena",
         "Amazon Kinesis Data Streams"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "sagemaker-ai-build-train-deploy-ml-001",
@@ -2168,7 +2414,8 @@
         "Amazon Comprehend",
         "Amazon Personalize"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "polly-text-to-speech-prebuilt-001",
@@ -2179,7 +2426,8 @@
         "Amazon Comprehend",
         "Amazon Textract"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "personalize-ecommerce-recommendations-001",
@@ -2190,7 +2438,8 @@
         "Amazon Comprehend",
         "Amazon Personalize"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "foundation-models-characteristics-select-two-001",
@@ -2202,7 +2451,11 @@
         "FMs are only used to create images.",
         "FMs are programmed with explicit rules."
       ],
-      "correctIndices": [0, 2]
+      "correctIndices": [
+        0,
+        2
+      ],
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "q-business-healthcare-generative-assistant-001",
@@ -2213,7 +2466,8 @@
         "Amazon Q Business",
         "Amazon Q Developer"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "authz-banking-transfer-privileges-001",
@@ -2224,7 +2478,8 @@
         "Encryption",
         "Auditing"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Security"
     },
     {
       "id": "shared-responsibility-healthcare-rds-s3-data-001",
@@ -2235,7 +2490,8 @@
         "Maintaining and patching the underlying hypervisor infrastructure for Amazon EC2",
         "Replacing faulty hardware components that might affect EC2 instance availability"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Security"
     },
     {
       "id": "mfa-root-user-verification-methods-001",
@@ -2246,7 +2502,8 @@
         "Use a virtual private network (VPN) whenever logging in.",
         "Have a credit card on file for identity verification."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Security"
     },
     {
       "id": "iam-temporary-access-roles-001",
@@ -2257,7 +2514,8 @@
         "IAM roles",
         "IAM policies"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Security"
     },
     {
       "id": "iam-policy-s3-bucket-access-001",
@@ -2268,7 +2526,8 @@
         "IAM role",
         "IAM policy"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Security"
     },
     {
       "id": "secrets-manager-db-api-keys-001",
@@ -2279,7 +2538,8 @@
         "AWS Secrets Manager",
         "AWS Systems Manager"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Security"
     },
     {
       "id": "ddos-vs-dos-multiple-compromised-001",
@@ -2290,7 +2550,8 @@
         "A DDoS attack targets multiple websites simultaneously instead of focusing on a single target.",
         "A DDoS attack uses multiple compromised computers and devices to launch the attack."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Security"
     },
     {
       "id": "boutique-ddos-protection-select-two-001",
@@ -2302,7 +2563,11 @@
         "Public subnets",
         "Elastic Load Balancing (ELB)"
       ],
-      "correctIndices": [1, 4]
+      "correctIndices": [
+        1,
+        4
+      ],
+      "module": "Security"
     },
     {
       "id": "encryption-decryption-key-access-001",
@@ -2313,7 +2578,8 @@
         "Authentication and authorization",
         "Hashing and salting"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Security"
     },
     {
       "id": "acm-data-in-transit-tax-001",
@@ -2324,7 +2590,8 @@
         "Amazon Macie",
         "AWS Certificate Manager (ACM)"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Security"
     },
     {
       "id": "detective-security-visualization-root-cause-001",
@@ -2335,7 +2602,8 @@
         "Amazon Detective",
         "AWS Security Hub"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Security"
     },
     {
       "id": "security-hub-compliance-aggregate-findings-001",
@@ -2346,7 +2614,8 @@
         "Amazon Detective",
         "AWS Security Hub"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Security"
     },
     {
       "id": "root-user-protect-select-two-001",
@@ -2358,7 +2627,11 @@
         "Turn on multi-factor authentication (MFA).",
         "Delete the root user after setting up AWS Identity and Access Management (IAM) users."
       ],
-      "correctIndices": [0, 3]
+      "correctIndices": [
+        0,
+        3
+      ],
+      "module": "Security"
     },
     {
       "id": "authentication-employee-portal-login-001",
@@ -2369,7 +2642,8 @@
         "Detection",
         "Authorization"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Security"
     },
     {
       "id": "shared-responsibility-aws-physical-security-001",
@@ -2380,7 +2654,8 @@
         "Encrypting customer data at rest",
         "Setting up AWS Identity and Access Management (IAM) roles and policies"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Security"
     },
     {
       "id": "iam-least-privilege-concept-001",
@@ -2391,7 +2666,8 @@
         "Default deny policy",
         "Principle of least privilege"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Security"
     },
     {
       "id": "aws-shield-ddos-free-001",
@@ -2402,7 +2678,8 @@
         "AWS Systems Manager",
         "AWS Identity and Access Management (IAM)"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Security"
     },
     {
       "id": "encrypt-data-in-transit-ssl-tls-001",
@@ -2413,7 +2690,8 @@
         "SSL/TLS certificates",
         "Multi-factor authentication (MFA)"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Security"
     },
     {
       "id": "kms-centralized-encryption-keys-ecommerce-001",
@@ -2424,7 +2702,8 @@
         "AWS Key Management Service (AWS KMS)",
         "Amazon Macie"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Security"
     },
     {
       "id": "iam-group-designers-s3-inherit-001",
@@ -2435,7 +2714,8 @@
         "IAM policy",
         "IAM user"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Security"
     },
     {
       "id": "iam-identity-center-sso-existing-idp-001",
@@ -2446,7 +2726,8 @@
         "AWS Secrets Manager",
         "AWS Identity and Access Management (IAM)"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Security"
     },
     {
       "id": "inspector-vulnerability-ec2-lambda-containers-001",
@@ -2457,7 +2738,8 @@
         "Amazon Inspector",
         "AWS Security Hub"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Security"
     },
     {
       "id": "cloudwatch-ecommerce-ec2-select-three-001",
@@ -2470,7 +2752,12 @@
         "CloudWatch can predict the items that customers will purchase and place those in the ecommerce application shopping cart in the buy again category.",
         "CloudWatch can design architectures and create all the resources to minimize performance issues."
       ],
-      "correctIndices": [0, 1, 2]
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "cloudtrail-s3-api-audit-logs-001",
@@ -2481,7 +2768,8 @@
         "AWS CloudTrail Insights",
         "Amazon CloudWatch Logs"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "artifact-tasks-select-two-001",
@@ -2493,7 +2781,11 @@
         "Set permissions for accounts by configuring service control policies (SCPs).",
         "Review, accept, and manage agreements with AWS."
       ],
-      "correctIndices": [0, 4]
+      "correctIndices": [
+        0,
+        4
+      ],
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "config-ec2-approved-instance-types-001",
@@ -2504,7 +2796,8 @@
         "AWS Config",
         "AWS CloudTrail"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "scp-organizations-apply-select-two-001",
@@ -2516,7 +2809,11 @@
         "AWS Identity and Access Management (IAM) roles",
         "An organizational unit (OU)"
       ],
-      "correctIndices": [2, 4]
+      "correctIndices": [
+        2,
+        4
+      ],
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "control-tower-multi-account-governance-001",
@@ -2527,7 +2824,8 @@
         "AWS Service Catalog",
         "AWS License Manager"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "trusted-advisor-cost-security-best-practices-001",
@@ -2538,7 +2836,8 @@
         "Amazon Inspector",
         "AWS Shared Responsibility Model"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "trusted-advisor-continuous-evaluation-suggestions-001",
@@ -2549,7 +2848,8 @@
         "AWS Artifact",
         "AWS CloudTrail"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "customer-compliance-center-resources-001",
@@ -2560,7 +2860,8 @@
         "AWS Artifact",
         "AWS Management Console"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "artifact-compliance-reports-agreements-001",
@@ -2571,7 +2872,8 @@
         "AWS Trusted Advisor",
         "AWS Artifact"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "control-tower-landing-zone-purpose-001",
@@ -2582,7 +2884,8 @@
         "It is a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
         "It filters inbound and outbound traffic to Amazon EC2 instances in a virtual private cloud (VPC)."
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "cloudwatch-ec2-metrics-scaling-001",
@@ -2593,7 +2896,8 @@
         "AWS Trusted Advisor",
         "Amazon CloudWatch"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "organizations-billing-centralize-ous-001",
@@ -2604,7 +2908,8 @@
         "AWS Organizations",
         "An Availability Zone (AZ)"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "service-catalog-curated-self-service-001",
@@ -2615,7 +2920,8 @@
         "AWS License Manager",
         "AWS Service Catalog"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "organizations-scp-restrictions-001",
@@ -2626,7 +2932,8 @@
         "An organizational unit (OU)",
         "A root account"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "cloudtrail-api-change-tracking-hybrid-001",
@@ -2637,7 +2944,8 @@
         "AWS Artifact",
         "Amazon CloudWatch"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "license-manager-byol-001",
@@ -2648,7 +2956,8 @@
         "AWS Control Tower",
         "AWS Service Catalog"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "config-approved-compute-resources-research-001",
@@ -2659,7 +2968,8 @@
         "AWS Artifact",
         "AWS CloudTrail"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "cost-drivers-healthcare-cto-001",
@@ -2670,7 +2980,8 @@
         "Although pricing factors into multiple service categories, the primary driving factors of cost are compute, storage, and data transfer.",
         "The only driving factor of cost is storage."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Pricing and Support"
     },
     {
       "id": "budgets-cost-threshold-alerts-001",
@@ -2681,7 +2992,8 @@
         "AWS Organizations",
         "AWS Pricing Calculator"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Pricing and Support"
     },
     {
       "id": "enterprise-support-tam-trusted-advisor-001",
@@ -2692,7 +3004,8 @@
         "Business Support",
         "Enterprise Support"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Pricing and Support"
     },
     {
       "id": "marketplace-saas-datasets-select-two-001",
@@ -2704,7 +3017,11 @@
         "Datasets and analytics tools",
         "Hardware products for on-premises deployment"
       ],
-      "correctIndices": [0, 3]
+      "correctIndices": [
+        0,
+        3
+      ],
+      "module": "Pricing and Support"
     },
     {
       "id": "enterprise-support-cto-mission-critical-15min-001",
@@ -2715,7 +3032,8 @@
         "Enterprise Support",
         "Basic Support"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Pricing and Support"
     },
     {
       "id": "professional-services-security-audit-best-practices-001",
@@ -2726,7 +3044,8 @@
         "AWS Professional Services",
         "AWS Basic Support"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Pricing and Support"
     },
     {
       "id": "pricing-calculator-migration-estimate-001",
@@ -2737,7 +3056,8 @@
         "With AWS Budgets, the company can monitor their aggregate utilization and coverage metrics.",
         "AWS Cost Explorer is a tool that the company can use to view and analyze their costs and usage."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Pricing and Support"
     },
     {
       "id": "edtech-cost-drivers-fundamental-select-three-001",
@@ -2750,7 +3070,12 @@
         "Outbound data transfer",
         "Compute"
       ],
-      "correctIndices": [1, 4, 5]
+      "correctIndices": [
+        1,
+        4,
+        5
+      ],
+      "module": "Pricing and Support"
     },
     {
       "id": "organizations-consolidated-billing-multi-account-001",
@@ -2761,7 +3086,8 @@
         "AWS Budgets",
         "AWS Cost Explorer"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "marketplace-compliance-ready-regulations-001",
@@ -2772,7 +3098,8 @@
         "Develop custom solutions in-house.",
         "Find compliance-ready solutions in the AWS Marketplace."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Pricing and Support"
     },
     {
       "id": "self-support-resources-select-three-001",
@@ -2785,7 +3112,12 @@
         "AWS Professional Services",
         "AWS solutions architects"
       ],
-      "correctIndices": [0, 1, 2]
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "module": "Pricing and Support"
     },
     {
       "id": "aws-partner-benefit-funding-001",
@@ -2796,7 +3128,8 @@
         "AWS Partner Funding benefits",
         "Exclusive access to all AWS Training and Certification"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Pricing and Support"
     },
     {
       "id": "aws-payment-models-select-three-001",
@@ -2809,7 +3142,12 @@
         "Save by using fixed expenses:",
         "Sign fixed contracts:"
       ],
-      "correctIndices": [0, 1, 2]
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "module": "Pricing and Support"
     },
     {
       "id": "apn-role-build-market-sell-001",
@@ -2820,7 +3158,8 @@
         "Offering certification for AWS users",
         "Developing new AWS services and features"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Pricing and Support"
     },
     {
       "id": "caf-platform-perspective-migration-001",
@@ -2831,7 +3170,8 @@
         "Operations perspective",
         "People perspective"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "migration-strategy-repurchasing-different-product-001",
@@ -2842,7 +3182,8 @@
         "Replatforming",
         "Repurchasing"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "migration-evaluator-business-case-001",
@@ -2853,7 +3194,8 @@
         "AWS Application Migration Service",
         "AWS Migration Hub"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "migration-hub-track-tasks-001",
@@ -2864,7 +3206,8 @@
         "AWS Application Migration Service",
         "AWS Migration Hub"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "sct-commercial-to-opensource-database-001",
@@ -2875,7 +3218,8 @@
         "Migration Evaluator",
         "AWS Migration Hub"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "datasync-onpremises-s3-scheduled-001",
@@ -2886,7 +3230,8 @@
         "AWS Direct Connect",
         "Transfer using the internet, no AWS service needed"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "caf-primary-function-001",
@@ -2897,7 +3242,8 @@
         "It acts as a centralized hub to manage a company's migration to the AWS Cloud.",
         "It is also known as the seven Rs or the seven migration strategies."
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "migration-hub-media-migrate-modernize-001",
@@ -2908,7 +3254,8 @@
         "AWS Application Discovery Service",
         "AWS Migration Hub"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "seven-rs-migration-strategies-001",
@@ -2919,7 +3266,8 @@
         "There are not seven, there are three (Assess, Mobilize, and Migrate and Modernize)",
         "Relocate, Remediate, Retrofit, Refactor, Regrade, Retool, Remove"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "migration-evaluator-retail-cfo-001",
@@ -2930,7 +3278,8 @@
         "AWS Migration Hub",
         "AWS Application Migration Service"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "caf-people-change-management-001",
@@ -2941,7 +3290,8 @@
         "People",
         "Business"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "datasync-credit-card-offpeak-no-private-connection-001",
@@ -2952,7 +3302,8 @@
         "AWS DataSync",
         "Virtual private gateway"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "dms-managed-database-plan-assess-convert-migrate-001",
@@ -2963,7 +3314,8 @@
         "Migration Evaluator",
         "AWS Database Migration Service (AWS DMS)"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "mgn-environmental-modernize-reduce-costs-001",
@@ -2974,7 +3326,8 @@
         "AWS Application Migration Service",
         "AWS Migration Hub"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "transfer-family-sftp-design-files-001",
@@ -2985,7 +3338,8 @@
         "AWS Transfer Family",
         "AWS DataSync"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Migrating to the AWS Cloud"
     },
     {
       "id": "x-ray-debugging-performance-marketing-001",
@@ -2996,7 +3350,8 @@
         "AWS Amplify",
         "AWS CodePipeline"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
     },
     {
       "id": "amazon-connect-customer-service-ai-001",
@@ -3007,7 +3362,8 @@
         "Amazon Connect",
         "Amazon WorkSpaces"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "appstream-saas-access-employees-001",
@@ -3018,7 +3374,8 @@
         "Amazon Connect",
         "AWS AppSync"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "iot-solutions-examples-select-two-001",
@@ -3030,7 +3387,11 @@
         "A Wi-Fi enabled plug that can be used to turn off lights remotely",
         "An online banking application used to check account balances"
       ],
-      "correctIndices": [1, 3]
+      "correctIndices": [
+        1,
+        3
+      ],
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "well-architected-cicd-operational-excellence-001",
@@ -3041,7 +3402,8 @@
         "Automate deployments through a continuous integration and continuous delivery pipeline (Operational Excellence).",
         "Reduce the cost of the infrastructure used for deployments (Cost Optimization)."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Well-Architected Solutions"
     },
     {
       "id": "well-architected-tool-purpose-001",
@@ -3052,7 +3414,8 @@
         "To automate cost forecasting for cloud projects",
         "To manage user permissions across AWS services"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Well-Architected Solutions"
     },
     {
       "id": "workspaces-remote-workforce-secure-001",
@@ -3063,7 +3426,8 @@
         "Amazon Connect",
         "Amazon AppStream 2.0"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "iot-core-manufacturing-equipment-monitoring-001",
@@ -3074,7 +3438,8 @@
         "Amazon Connect",
         "AWS Well-Architected Tool"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "AI ML and Data Analytics"
     },
     {
       "id": "amplify-fullstack-auth-storage-001",
@@ -3085,7 +3450,8 @@
         "AWS Well-Architected Tool",
         "AWS AppSync"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
     },
     {
       "id": "well-architected-reliability-multi-az-001",
@@ -3096,7 +3462,8 @@
         "Increase the instance's firewall protection (Security).",
         "Deploy instances across multiple Availability Zones for fault tolerance (Reliability)."
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "module": "Well-Architected Solutions"
     },
     {
       "id": "ses-marketing-emails-engagement-001",
@@ -3107,7 +3474,8 @@
         "Amazon Simple Email Service (Amazon SES)",
         "Amazon Connect"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Pricing and Support"
     },
     {
       "id": "ec2-rightsize-low-cpu-usage-001",
@@ -3118,7 +3486,8 @@
         "Rightsize the EC2 instance to a smaller type to match the actual workload.",
         "Upgrade the EC2 instance for better data protection."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "module": "Well-Architected Solutions"
     }
   ]
 }

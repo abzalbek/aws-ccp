@@ -21,6 +21,7 @@ object QuizRepository {
     private fun parseQuestion(o: JSONObject): QuizItem {
         val id = o.getString("id")
         val question = o.getString("question")
+        val module = o.optString("module", "")
         val isMatching = o.optString("type", "") == "matching" || o.has("matchingPairs")
         if (isMatching) {
             val arr = o.getJSONArray("matchingPairs")
@@ -32,7 +33,7 @@ object QuizRepository {
                 )
             }
             require(pairs.isNotEmpty()) { "matchingPairs must not be empty" }
-            return MatchingQuestion(id = id, question = question, pairs = pairs)
+            return MatchingQuestion(id = id, question = question, module = module, pairs = pairs)
         }
         val opts = o.getJSONArray("options")
         val options = List(opts.length()) { idx -> opts.getString(idx) }
@@ -41,6 +42,7 @@ object QuizRepository {
         return ChoiceQuestion(
             id = id,
             question = question,
+            module = module,
             options = options,
             correctIndices = correct,
         )

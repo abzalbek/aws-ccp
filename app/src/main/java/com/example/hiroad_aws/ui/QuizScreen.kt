@@ -21,10 +21,14 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ElevatedCard
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.RadioButton
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -44,6 +48,7 @@ import androidx.compose.ui.unit.dp
 import com.example.hiroad_aws.data.ChoiceQuestion
 import com.example.hiroad_aws.data.MatchingQuestion
 import com.example.hiroad_aws.data.QuizItem
+import com.example.hiroad_aws.data.QuizModules
 import com.example.hiroad_aws.data.QuizRepository
 import com.example.hiroad_aws.ui.theme.HiRoad_AWSTheme
 
@@ -53,8 +58,14 @@ private fun canSubmitChoice(correctIndices: Set<Int>, selected: Set<Int>): Boole
 private fun canSubmitMatching(selections: List<Int?>): Boolean =
     selections.size > 0 && selections.all { it != null }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun QuizScreen(modifier: Modifier = Modifier) {
+fun QuizScreen(
+    modifier: Modifier = Modifier,
+    /** `null` means include every question. */
+    moduleFilter: String? = null,
+    onExitToHome: () -> Unit = {},
+) {
     val context = LocalContext.current
     var questions by remember { mutableStateOf<List<QuizItem>?>(null) }
     var loadError by remember { mutableStateOf<String?>(null) }
@@ -66,40 +77,81 @@ fun QuizScreen(modifier: Modifier = Modifier) {
     val current: QuizItem? =
         roundOrder.getOrNull(roundIndex)
 
+    val subtitle = when {
+        moduleFilter.isNullOrBlank() -> QuizModules.ALL_QUESTIONS
+        else -> moduleFilter
+    }
+
+    fun filteredBank(loaded: List<QuizItem>): List<QuizItem> =
+        if (moduleFilter.isNullOrBlank()) loaded
+        else loaded.filter { it.module == moduleFilter }
+
     LaunchedEffect(Unit) {
         try {
             val list = QuizRepository.loadQuestions(context)
             questions = list
-            val shuffled = list.shuffled()
-            roundOrder = shuffled
-            roundIndex = 0
         } catch (e: Exception) {
             loadError = e.message ?: e.javaClass.simpleName
         }
     }
 
-    BackHandler(
-        enabled = questions != null && loadError == null && roundOrder.isNotEmpty(),
-    ) {
-        if (roundIndex > 0) {
+    LaunchedEffect(questions, moduleFilter) {
+        val loaded = questions ?: return@LaunchedEffect
+        val bank = filteredBank(loaded)
+        if (bank.isEmpty()) {
+            roundOrder = emptyList()
+            roundIndex = 0
+            revealed = false
+            selectedIndices = emptySet()
+            return@LaunchedEffect
+        }
+        roundOrder = bank.shuffled()
+        roundIndex = 0
+        revealed = false
+        selectedIndices = emptySet()
+    }
+
+    BackHandler(enabled = questions != null && loadError == null) {
+        if (roundIndex > 0 && roundOrder.isNotEmpty()) {
             roundIndex--
             revealed = false
             selectedIndices = emptySet()
+        } else {
+            onExitToHome()
         }
     }
 
+    Scaffold(
+        modifier = modifier.fillMaxSize(),
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = {
+                    Text(
+                        text = subtitle,
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.SemiBold,
+                    )
+                },
+                navigationIcon = {
+                    IconButton(onClick = onExitToHome) {
+                        Text(
+                            text = "Home",
+                            style = MaterialTheme.typography.labelLarge,
+                            color = MaterialTheme.colorScheme.primary,
+                        )
+                    }
+                },
+            )
+        },
+    ) { innerPadding ->
     Column(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxSize()
-            .padding(20.dp)
+            .padding(innerPadding)
+            .padding(horizontal = 20.dp, vertical = 8.dp)
             .verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
-        Text(
-            text = "AWS Certified Cloud Practitioner",
-            style = MaterialTheme.typography.titleLarge,
-            fontWeight = FontWeight.SemiBold,
-        )
         if (roundOrder.isNotEmpty()) {
             Text(
                 text = "Question ${roundIndex + 1} of ${roundOrder.size}",
@@ -124,7 +176,27 @@ fun QuizScreen(modifier: Modifier = Modifier) {
                 }
             }
             current == null -> {
-                Text("No questions in the bank yet. Add entries to questions.json.")
+                val loaded = questions ?: emptyList()
+                val bank = filteredBank(loaded)
+                when {
+                    loaded.isEmpty() -> {
+                        Text("No questions in the bank yet. Add entries to questions.json.")
+                    }
+                    bank.isEmpty() -> {
+                        Text(
+                            "No questions for this module yet.",
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
+                    else -> {
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.Center,
+                        ) {
+                            CircularProgressIndicator()
+                        }
+                    }
+                }
             }
             else -> {
                 val currentItem = requireNotNull(current)
@@ -138,7 +210,8 @@ fun QuizScreen(modifier: Modifier = Modifier) {
                         revealed = revealed,
                         onReveal = { revealed = true },
                         onNext = {
-                            val bank = questions ?: return@ChoiceQuestionContent
+                            val loaded = questions ?: return@ChoiceQuestionContent
+                            val bank = filteredBank(loaded)
                             if (bank.isEmpty()) return@ChoiceQuestionContent
                             revealed = false
                             selectedIndices = emptySet()
@@ -158,7 +231,8 @@ fun QuizScreen(modifier: Modifier = Modifier) {
                         revealed = revealed,
                         onReveal = { revealed = true },
                         onNext = {
-                            val bank = questions ?: return@MatchingQuestionContent
+                            val loaded = questions ?: return@MatchingQuestionContent
+                            val bank = filteredBank(loaded)
                             if (bank.isEmpty()) return@MatchingQuestionContent
                             revealed = false
                             val next = roundIndex + 1
@@ -173,6 +247,7 @@ fun QuizScreen(modifier: Modifier = Modifier) {
                 }
             }
         }
+    }
     }
 }
 

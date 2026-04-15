@@ -3,11 +3,13 @@ package com.example.hiroad_aws.data
 sealed interface QuizItem {
     val id: String
     val question: String
+    val module: String
 }
 
 data class ChoiceQuestion(
     override val id: String,
     override val question: String,
+    override val module: String,
     val options: List<String>,
     val correctIndices: Set<Int>,
 ) : QuizItem {
@@ -17,6 +19,7 @@ data class ChoiceQuestion(
 data class MatchingQuestion(
     override val id: String,
     override val question: String,
+    override val module: String,
     val pairs: List<MatchingPair>,
 ) : QuizItem
 

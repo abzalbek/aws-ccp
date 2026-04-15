@@ -1263,6 +1263,1862 @@
         "High availability and fault tolerance"
       ],
       "correctIndices": [3, 4]
+    },
+    {
+      "id": "vpc-subnet-uses-three-001",
+      "question": "What are the uses of a subnet in an Amazon VPC? (Select THREE.)",
+      "options": [
+        "Can be used to share public resources",
+        "Can be used to organize your resources",
+        "Can be used to provide high availability because they consist of one or more discrete data centers",
+        "Can provide a centralized interface for accessing and managing various AWS resources and services",
+        "Can be used to isolate resources and keep them private",
+        "Can be used as an on-demand and scalable computing capacity in the AWS Cloud"
+      ],
+      "correctIndices": [0, 1, 4]
+    },
+    {
+      "id": "vpc-vpn-private-subnet-001",
+      "question": "A company is setting up their Amazon VPC. They need to connect their corporate data center through the internet with a secure connection. They also want to make sure the resources are isolated from the public. Which solution would BEST meet their needs?",
+      "options": [
+        "An internet gateway with a public subnet holding the resources in the Amazon VPC",
+        "A virtual private gateway with a VPN connection and a private subnet in the Amazon VPC",
+        "An internet gateway with an Amazon VPC and no subnets",
+        "An internet gateway with an Amazon VPC and a public subnet"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "direct-connect-migration-hybrid-001",
+      "question": "A company is conducting a large-scale migration of their on-premises data center with their data warehouse and data backup. They need a solution that will meet the large amount of bandwidth requirements during migration. The solution will also be used for their ongoing data transfers after the move because they will retain part of their on-premises data center for a hybrid cloud solution. Which AWS solution would best meet their needs?",
+      "options": [
+        "AWS Client VPN",
+        "AWS Site-to-Site VPN",
+        "AWS Direct Connect link to their on-premises network and the AWS Cloud",
+        "AWS Private Link to their on-premises datacenter"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "vpc-gateway-vpn-approved-network-001",
+      "question": "A company is choosing the type of gateway for their network. They need to connect their corporate data center with their private subnet in their Amazon Virtual Private Cloud. Their gateway needs to allow only protected internet traffic to enter into the Amazon VPC. It should also allow a connection between their Amazon VPC and a private network only if it is coming from an approved network. Which type of gateway would BEST meet their needs?",
+      "options": [
+        "Internet gateway",
+        "Virtual private gateway",
+        "AWS Transit Gateway",
+        "Amazon API Gateway"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ec2-public-subnet-security-groups-001",
+      "question": "A retail customer is setting up their application in the AWS Cloud. The application requires a lot of control in defining traffic rules for the individual Amazon EC2 instances in their public subnet. Which solution would BEST meet the requirements for securing the resources?",
+      "options": [
+        "Change all the subnets to private subnets to avoid accessing from the public internet.",
+        "Set up security groups for the EC2 instances based on the application requirements.",
+        "Set up network ACLs for the EC2 instances based on the application requirements.",
+        "Set up a public subnet with strong passwords that meet the customer's requirements."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "network-acl-stateless-filtering-001",
+      "question": "Which network component performs stateless packet filtering?",
+      "options": [
+        "Private subnet",
+        "Network access control list (network ACL)",
+        "Amazon VPC",
+        "Security groups"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "cloudfront-sales-training-low-latency-001",
+      "question": "An enterprise customer with a worldwide sales force is looking to deliver their large library of sales training content. They want to make sure their sales force can access the media-rich training content with low latency and reduced costs. Which AWS service would BEST fit the customer's need?",
+      "options": [
+        "Amazon VPC",
+        "Amazon Route 53",
+        "Amazon CloudFront",
+        "AWS Global Accelerator"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "route53-domain-management-001",
+      "question": "After years of working with different domain registration companies, a media company is looking for a solution to manage all their existing domain names. They also want to register new domain names. Ideally, they would like to manage all their domain names in a single service. Which AWS service would BEST fit the customer's need?",
+      "options": [
+        "Amazon VPC",
+        "Amazon Route 53",
+        "Amazon CloudFront",
+        "AWS Global Accelerator"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "direct-connect-healthcare-compliance-001",
+      "question": "A healthcare company is looking to create a dedicated network connection to AWS. They would use this connection for their heavy payloads of data being sent over the internet to AWS. They also have compliance requirements due to the sensitive nature of their patient data. Which type of connection to the AWS Cloud would BEST meet their needs?",
+      "options": [
+        "Standard internet connection from the client to an internet gateway in the VPC in the AWS Cloud",
+        "VPN connection from their corporate data center to the AWS Cloud",
+        "VPN connection from their corporate data center to a virtual private gateway to their Amazon VPC",
+        "AWS Direct Connect connection from their corporate data center to a virtual private gateway in their VPC in the AWS Cloud"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "global-accelerator-edge-networking-routing-001",
+      "question": "A customer is exploring edge networking services to improve application availability, performance, and security. They need a solution for traffic routing when something goes wrong in one of their application's locations. Specifically, it takes into account the endpoint health, user location, and policies. Which AWS solution would BEST meet their needs?",
+      "options": [
+        "AWS Direct Connect",
+        "Amazon Route 53",
+        "Amazon CloudFront",
+        "AWS Global Accelerator"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ec2-instance-store-high-io-temporary-001",
+      "question": "A developer is building an application that processes large amounts of data and requires high I/O performance. After processing the data for an operation, the results are displayed to the user and do not need to be retained long-term. Unfortunately, the application's current storage solution is experiencing performance bottlenecks during peak processing times. How could implementing an EC2 instance store improve the performance of the application?",
+      "options": [
+        "EC2 instance store provides high I/O performance for temporary storage needs.",
+        "EC2 instance store reduces overall storage costs by offering the cheapest per-gigabyte storage option in AWS.",
+        "EC2 instance store provides a persistent storage solution that survives instance failures.",
+        "EC2 instance store allows storage to be conveniently shared between multiple EC2 instances simultaneously."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ebs-finance-persistent-block-suitable-001",
+      "question": "AnyCompany Finance is designing an application that requires consistent and low-latency access to financial data. They're looking for a storage solution that provides persistent block storage. Why would Amazon EBS be suitable to store data in this scenario?",
+      "options": [
+        "Amazon EBS allows sharing volumes across multiple AWS Regions without any latency impact.",
+        "Amazon EBS automatically scales volume capacity without requiring any volume modifications.",
+        "Amazon EBS provides unlimited input/output operations per second (IOPS) for all volume types, regardless of size.",
+        "Amazon EBS provides high availability and durability by automatically replicating volumes within the same Availability Zone."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ebs-software-persistence-vm-crash-001",
+      "question": "AnyCompany Software is migrating their on-premises application architecture to AWS. They are particularly concerned about data persistence because in their current environment, they have experienced data loss when virtual machines (VMs) crashed. They want to understand how Amazon Elastic Block Store (Amazon EBS) can help address their data persistence requirements when they move their workloads to Amazon EC2 instances. How does Amazon EBS solve the data persistence issue described in this scenario?",
+      "options": [
+        "EBS automatically synchronizes data with Amazon S3 every 5 minutes, ensuring that if an EC2 instance crashes, all data can be immediately restored from the S3 backup.",
+        "Amazon EBS caches all data in memory for instant recovery when instances are restarted.",
+        "Amazon EBS volumes exist independently from the instance and persist even after the instance is terminated.",
+        "Amazon EBS automatically backs up all data to Amazon S3 every hour to help ensure persistence."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ebs-snapshots-test-environments-commerce-001",
+      "question": "AnyCompany Commerce operates an online trading platform experiencing rapid growth. Their development team frequently needs to create test environments that mirror production for testing new features, but setting up these environments has become time-consuming and error-prone. What is the most significant benefit of using EBS snapshots in this scenario?",
+      "options": [
+        "EBS snapshots enable rapid creation of new volumes from existing data, so you can quickly deploy identical test environments that mirror production.",
+        "EBS snapshots automatically optimize the performance of your EBS volumes by defragmenting data during the snapshot process.",
+        "EBS snapshots reduce your storage costs by compressing all data on your EBS volumes by up to 90 percent.",
+        "EBS snapshots automatically migrate your data to different AWS Regions for improved global access speeds."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "dlm-healthcare-ebs-snapshots-retention-001",
+      "question": "AnyCompany Healthcare manages thousands of EBS volumes containing patient records. They need to ensure that this data is properly backed up, retained according to compliance requirements, and old snapshots are removed to control costs. Which problem does AWS Data Lifecycle Manager primarily solve in this scenario?",
+      "options": [
+        "Providing real-time monitoring of EBS volume performance metrics",
+        "Encrypting sensitive patient data stored on EBS volumes",
+        "Automating the creation, retention, and deletion of EBS snapshots and EBS backed Amazon Machine Images (AMIs) according to a schedule",
+        "Migrating patient data from on-premises storage to AWS Cloud storage"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "s3-mobile-app-storage-aspects-001",
+      "question": "AnyCompany Mobile is evaluating cloud storage solutions for their new mobile application. They need a reliable service that can handle various types of data storage requirements as their user base grows. Based on this scenario, what is an aspect of Amazon S3 that they could use in this scenario?",
+      "options": [
+        "Running relational database queries for user authentication",
+        "Hosting virtual machines (VMs) to process application logic",
+        "Real-time data streaming and message processing",
+        "Storing and distributing mobile application content and user-generated media files"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "s3-marketing-public-access-block-001",
+      "question": "AnyCompany Marketing has created an Amazon S3 bucket to host images for their new website. The images need to be accessible to anyone visiting the website without authentication. After uploading the images to the bucket, users report they cannot access them, even though the bucket policy is set to allow public access. What is the most likely cause of this access issue?",
+      "options": [
+        "The images are not properly tagged with public read permissions.",
+        "Block public access settings are enabled at the account or bucket level.",
+        "They need to enable the website hosting feature to make any Amazon S3 content public.",
+        "The S3 bucket must be in the same AWS Region as the users trying to access the content."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s3-media-durability-video-distribution-001",
+      "question": "AnyCompany Media is evaluating a new cloud storage solution for distributing large video files globally. They need high durability, scalability, and various access control mechanisms. Based on this scenario, which Amazon S3 feature would be particularly beneficial?",
+      "options": [
+        "Amazon S3 offers 99.999999999 percent (11 nines) of durability for objects stored across multiple Availability Zones. This maintains highly available for their video content and protects it against data loss.",
+        "Amazon S3 automatically compresses all stored objects to reduce storage costs by up to 90 percent, making it ideal for large video files.",
+        "Amazon S3 limits individual object sizes to 5 GB, requiring companies to split large video files before upload.",
+        "Amazon S3 provides built-in video transcoding services that automatically convert videos to different formats when they are uploaded."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s3-business-lifecycle-tiering-cost-001",
+      "question": "AnyCompany Business stores a growing amount of customer data in Amazon S3. The manager wants to reduce storage costs by moving older data to cheaper storage. The data access pattern is: 0–30 days frequently accessed; 30–90 days occasionally accessed; after 90 days rarely accessed. What should they do in this situation to optimize costs while maintaining appropriate access to the data?",
+      "options": [
+        "Create a lifecycle rule to transition objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days, transition to S3 Glacier after 90 days.",
+        "Create a lifecycle rule to immediately transition all objects to S3 Glacier and set up a restore policy.",
+        "Create a lifecycle rule to delete all objects after 90 days and rely on database backups.",
+        "Create multiple S3 buckets with different storage classes and manually move objects between buckets as they age."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s3-lifecycle-definition-001",
+      "question": "Which statement BEST describes S3 Lifecycle?",
+      "options": [
+        "A backup service that creates copies of your S3 objects in different AWS Regions to protect against Regional failures.",
+        "A feature that automatically compresses Amazon S3 objects after a certain period to reduce storage costs.",
+        "A monitoring system that alerts administrators when Amazon S3 objects have not been accessed for a specified period.",
+        "A feature used to define rules to automatically transition objects between different storage classes, or delete them based on age or usage patterns."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "efs-financial-elastic-capacity-market-data-001",
+      "question": "AnyCompany Financial needs to implement a new data application that will analyze market data. The application must be able to scale compute resources up or down to match traffic demand while maintaining access to the same datasets. What is a benefit of using Amazon EFS as the storage solution for the application described in this scenario?",
+      "options": [
+        "Amazon EFS provides the lowest cost storage option for infrequently accessed financial data.",
+        "Amazon EFS provides faster read access than local instance storage for high-frequency trading algorithms.",
+        "Amazon EFS provides elastic storage capacity, automatically scaling up and down as files are added and removed, with no disruption to applications.",
+        "Amazon EFS provides automatic global replication of data, eliminating the need for data backups."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "efs-retail-shared-access-collaboration-001",
+      "question": "AnyCompany Retail is planning to migrate their on-premises file storage to AWS. They need a solution that allows their global development teams to collaborate on the same set of files simultaneously. Which feature of Amazon EFS makes it a good fit for this scenario?",
+      "options": [
+        "Amazon EFS provides shared access for thousands of Amazon EC2 instances, with consistent low latencies.",
+        "Amazon EFS makes it possible to store files in the cloud, but requires manual synchronization between different instances.",
+        "Amazon EFS provides block storage that can be formatted with any file system.",
+        "Amazon EFS offers single-instance access with high throughput for dedicated processing."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fsx-windows-smb-active-directory-001",
+      "question": "AnyCompany Media wants to migrate its file shares to AWS while maintaining compatibility with existing applications. They need a solution that supports Server Message Block (SMB) protocol and integrates with Microsoft Active Directory. Which AWS service should they implement in this scenario?",
+      "options": [
+        "Amazon Elastic File System (Amazon EFS)",
+        "Amazon S3 File Gateway",
+        "Amazon FSx for Windows File Server",
+        "Amazon Elastic Block Store (Amazon EBS)"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "storage-gateway-anycompany-files-s3-file-gateway-001",
+      "question": "AnyCompany has a large collection of files stored on-premises that needs to be backed up to the AWS Cloud. They want to maintain local access to frequently used files while using cloud storage for cost savings. They also want to minimize changes to their existing file-sharing workflows and applications. Which AWS Storage Gateway type BEST addresses these requirements?",
+      "options": [
+        "Amazon S3 File Gateway",
+        "Volume Gateway in Cached mode",
+        "Volume Gateway in Stored mode",
+        "Tape Gateway"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "storage-gateway-manufacturing-cad-cached-volume-001",
+      "question": "AnyCompany Manufacturing stores CAD files that need to be accessed frequently by engineers at their on-premises data center. They want to maintain local access to this data while also benefiting from AWS Cloud storage capabilities. They plan to implement a solution that provides low-latency access to frequently used files while backing up data to AWS. Which AWS Storage Gateway configuration should they choose?",
+      "options": [
+        "Implement Storage Gateway in Tape Gateway mode to back up the CAD files to virtual tapes in Amazon S3.",
+        "Implement Storage Gateway in Stored Volume mode and configure all volumes to be stored entirely in Amazon S3.",
+        "Deploy Amazon FSx for Windows File Server in the on-premises data center.",
+        "Implement Storage Gateway in Cached Volume mode to keep frequently accessed data local while storing the complete dataset in Amazon S3."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "elastic-disaster-recovery-telecom-benefit-001",
+      "question": "AnyCompany Telecommunications is concerned about potential downtime after experiencing an outage last quarter. They want to implement a disaster recovery solution for their on-premises server fleet but have limited IT staff. The CEO is particularly concerned about maintaining exact replicas of production servers and minimizing recovery time. What is a key benefit of using AWS Elastic Disaster Recovery in this scenario?",
+      "options": [
+        "Automated creation of separate development and test environments from production backups",
+        "Direct connection to AWS Storage Gateway to accelerate backup and recovery operations",
+        "Continuous block-level replication with frequent backup intervals, providing near-instant recovery of servers at the target AWS Region",
+        "Elimination of source-side agents by using existing backup software"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "s3-storage-classes-primary-function-001",
+      "question": "What is the primary function of Amazon S3 storage classes?",
+      "options": [
+        "To encrypt data at rest and in transit",
+        "To replicate data across multiple AWS Regions automatically",
+        "To organize objects within buckets hierarchically",
+        "To provide different storage options optimized for different use cases and access patterns"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ebs-commerce-dynamic-expand-backup-001",
+      "question": "AnyCompany Commerce has recently migrated its main application to an Amazon EC2 instance in AWS. As their customer base expands, they are exploring storage solutions that can grow dynamically with the application's data needs. The solution must meet these requirements: persistent block storage that provides consistent low-latency performance; ability to be attached to and detached from the EC2 instance as needed; independently resize storage capacity without disrupting the instance; create point-in-time backups to protect critical customer and inventory data. Which AWS storage service would BEST meet the requirements in the scenario?",
+      "options": [
+        "Amazon S3",
+        "Amazon Elastic File System (Amazon EFS)",
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon FSx"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "elastic-disaster-recovery-definition-001",
+      "question": "Which statement BEST describes AWS Elastic Disaster Recovery?",
+      "options": [
+        "A managed database service that provides automated backups and cross-Region replication",
+        "A service that automatically scales computing capacity based on workload demands during disaster events",
+        "A service that minimizes downtime and data loss by providing fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery",
+        "A backup service that creates periodic snapshots of AWS resources and stores them in Amazon S3 buckets"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "storage-gateway-definition-001",
+      "question": "Which statement BEST describes AWS Storage Gateway?",
+      "options": [
+        "A virtual private network that creates secure connections between a data center and AWS",
+        "A migration tool that automatically transfers all on-premises data to the cloud",
+        "A physical hardware appliance that must be installed in a data center",
+        "A hybrid cloud storage solution that provides on-premises applications with access to virtually unlimited cloud storage"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ebs-snapshots-software-backup-testing-dr-001",
+      "question": "AnyCompany Software is deploying a critical production application on Amazon EC2 instances with several Amazon Elastic Block Store (Amazon EBS) volumes containing application code and customer data. The team is looking for an AWS service they can use to back up the data for their application. The solution needs to meet the following criteria: create regular data backups; create duplicate environments for testing; create a disaster recovery strategy; create full or incremental backups without impacting application performance; provide cost-effective long-term storage. Which AWS service or feature would BEST meet the requirements in the scenario?",
+      "options": [
+        "Amazon Elastic File System (Amazon EFS)",
+        "Amazon FSx",
+        "Amazon S3 Glacier Flexible Retrieval",
+        "EBS snapshots"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "s3-definition-best-describes-001",
+      "question": "Which statement BEST describes Amazon S3?",
+      "options": [
+        "A scalable object storage service that is used to store and retrieve any amount of data from anywhere on the web.",
+        "A file storage service that provides a traditional file system interface for sharing files between multiple instances.",
+        "A storage service primarily designed for long-term archival and backup of data that is rarely accessed.",
+        "A block-level storage service that provides persistent storage for Amazon EC2 instances."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "storage-gateway-manufacturing-drawings-file-gateway-001",
+      "question": "AnyCompany Manufacturing maintains a large amount of engineering drawings and design files that their teams need to access daily from their on-premises applications. They want to gradually migrate these files to AWS to reduce their local storage costs while maintaining low-latency access for frequently used files. The solution must integrate with existing file-based workflows; provide a seamless path to cloud storage without disrupting current operations; maintain local, low-latency access to frequently used files. Which AWS storage service should they use based on these requirements?",
+      "options": [
+        "Amazon FSx for Windows File Server",
+        "Amazon S3 Glacier Flexible Retrieval",
+        "AWS Storage Gateway – File Gateway",
+        "Amazon Elastic File System (Amazon EFS)"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "s3-storage-classes-pricing-characteristic-001",
+      "question": "What is a key characteristic of Amazon S3 storage classes pricing?",
+      "options": [
+        "All storage classes have the same minimum storage duration requirement.",
+        "Pricing varies based on storage costs, retrieval fees, and minimum storage durations.",
+        "Pricing is exclusively determined by the geographic region of the bucket.",
+        "All storage classes cost the same but differ in retrieval speed."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ec2-instance-store-ai-ml-training-temporary-001",
+      "question": "AnyCompany AI is developing a machine learning application that requires extremely fast data processing for temporary model training datasets. The data is generated during training sessions and stored separately in persistent storage. The team is trying to determine the best storage solution to use alongside their application. The solution must meet these criteria: highest possible I/O performance; directly attached to their Amazon EC2 instances; temporary storage – data does not persist when instances are stopped or terminated. Which AWS service BEST meets the temporary storage needs described in this scenario?",
+      "options": [
+        "Amazon EC2 instance store",
+        "Amazon S3",
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon Elastic File System (Amazon EFS)"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ebs-definition-best-describes-001",
+      "question": "Which statement BEST describes Amazon Elastic Block Store (Amazon EBS)?",
+      "options": [
+        "A temporary storage option that is lost when an instance is stopped or terminated",
+        "A file storage system that allows multiple instances to access the same data simultaneously",
+        "A block-level storage service that provides persistent storage volumes for Amazon EC2 instances",
+        "An in-memory cache used to improve database performance"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "efs-definition-best-describes-001",
+      "question": "Which statement BEST describes Amazon Elastic File System (Amazon EFS)?",
+      "options": [
+        "A block storage service that provides volumes to attach to single Amazon EC2 instance",
+        "A fixed-capacity file storage system that requires manual scaling and management",
+        "A fully managed, elastic file system that scales automatically as files are added and removed",
+        "An object storage service designed for long-term archival of rarely accessed data"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "fsx-definition-best-describes-001",
+      "question": "Which statement BEST describes Amazon FSx?",
+      "options": [
+        "A block storage service that provides high performance volumes for EC2 instances",
+        "A fully managed service that provides cost-effective, scalable file storage built on widely used file systems",
+        "An object storage solution designed for archiving rarely accessed data",
+        "A service used to set up private file sharing within an on-premises data center only"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s3-marketing-campaign-assets-distribution-001",
+      "question": "AnyCompany Marketing needs a storage solution to distribute large collections of high-resolution images, videos, and design files for client campaigns. Some assets are accessed frequently, while others are archived for occasional reference. The solution must meet these requirements: unlimited storage capacity; high durability; easy file sharing through URLs; ability to organize assets by client and project; cost-efficient storage options; security controls to prevent unauthorized access for specific assets. Which AWS service is BEST suited for the storage needs described in this scenario?",
+      "options": [
+        "Amazon Elastic File System (Amazon EFS)",
+        "Amazon FSx",
+        "Amazon S3",
+        "Amazon Elastic Block Storage (Amazon EBS)"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "efs-technology-linux-shared-development-storage-001",
+      "question": "AnyCompany Technology needs to implement a centralized storage solution for their development team that allows multiple Amazon EC2 instances to access the same file system simultaneously. The solution must meet these requirements: provide a fully managed service; automatically scale; eliminate the need for capacity planning; support Linux-based applications with standard file system interfaces; maintain consistent low-latency access across development environments; provide high durability without requiring complex replication setups. Which AWS storage service is BEST suited for this scenario?",
+      "options": [
+        "Amazon FSx",
+        "Amazon Elastic File System (Amazon EFS)",
+        "Amazon S3",
+        "Amazon Elastic Block Store (Amazon EBS)"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "fsx-windows-marketing-file-shares-smb-ad-001",
+      "question": "AnyCompany Marketing needs to migrate their existing file shares to AWS to support their design teams who work with large creative files. They need help choosing a storage solution that can facilitate this migration. The solution must meet these requirements: fully managed service; seamlessly integrate with Windows applications; support the SMB (Server Message Block) protocol; offer Active Directory (AD) integration for user authentication; support data deduplication for cost optimization; provide consistent sub-millisecond latencies; provide high availability. Which AWS storage service BEST meets the requirements described in the scenario?",
+      "options": [
+        "Amazon FSx for Windows File Server",
+        "Amazon Storage Gateway",
+        "Amazon S3",
+        "Amazon Elastic File System (Amazon EFS)"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "rds-managed-vs-ec2-logistics-focus-001",
+      "question": "AnyCompany Logistics is growing and expanding their online platform. The development team must choose between two database options. They can host their own database on an Amazon EC2 instance or use AWS's fully managed database service. The company wants to reduce IT maintenance tasks so their staff can focus more on development work. Which option should they choose?",
+      "options": [
+        "Choose the self-hosted database on Amazon EC2, because it is always more cost effective for growing companies.",
+        "Choose a managed database service, because the team wants to focus on developing new features rather than database administration tasks.",
+        "Choose the self-hosted database on Amazon EC2, because it will always provide better performance for ecommerce applications.",
+        "Choose the managed database service, because it will automatically optimize the company's application code."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "rds-retail-multi-az-minimal-downtime-001",
+      "question": "AnyCompany Retail wants to migrate its product database to the AWS Cloud to reduce operational overhead. Their existing database contains critical inventory and pricing information that requires continuous operation with minimal downtime. Management is exploring Amazon RDS as a way to reduce the number of IT resources. Which feature of Amazon RDS addresses the database requirements described in this scenario?",
+      "options": [
+        "Manual snapshot creation",
+        "Self-managed patching",
+        "Fixed storage allocation",
+        "Multi-AZ deployments"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "aurora-financial-mysql-throughput-scenario-001",
+      "question": "AnyCompany Financial is experiencing slow response times with their current MySQL database during peak transaction periods. It processes over 100,000 transactions per hour and requires high throughput for customer satisfaction. The CTO is looking at Amazon Aurora as a way to significantly improve database performance. Which Aurora feature BEST addresses this scenario?",
+      "options": [
+        "Aurora provides built-in automated instance scaling that adds more CPU resources during peak transaction times.",
+        "Aurora includes data compression technology that reduces storage requirements for faster query performance.",
+        "Aurora provides a high-performance, highly available storage architecture that offers up to five times the throughput of standard MySQL.",
+        "Aurora offers a centralized storage system that eliminates network latency between instances."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "elasticache-problem-solves-latency-throughput-001",
+      "question": "Which problem does Amazon ElastiCache solve?",
+      "options": [
+        "Network connectivity between on-premises and AWS environments",
+        "Performance bottlenecks due to high latency and throughput constraints",
+        "Secure storage of application credentials and secrets",
+        "Cost optimization of infrequently accessed data"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "aws-backup-main-problem-fragmented-001",
+      "question": "What is the main problem that can be solved by implementing AWS Backup?",
+      "options": [
+        "Slow network connectivity between Regions",
+        "High costs of on-demand compute instances",
+        "Fragmented backup approaches across different AWS services",
+        "Complex machine learning model development"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "documentdb-primary-feature-mongodb-001",
+      "question": "What is a primary feature of Amazon DocumentDB?",
+      "options": [
+        "MongoDB compatibility",
+        "Amazon S3 compatibility",
+        "AWS Lambda integration",
+        "Amazon EC2 hosting"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "neptune-benefit-connected-data-latency-001",
+      "question": "What is a benefit of using Amazon Neptune?",
+      "options": [
+        "Reduced costs for simple data storage",
+        "Built-in natural language processing (NLP) capabilities",
+        "Automatic translation of SQL queries to graph queries",
+        "Low-latency queries on highly connected data"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "shared-responsibility-managed-database-customer-001",
+      "question": "Which statement describes the responsibilities of customers using fully managed AWS database services?",
+      "options": [
+        "Customers are responsible for deploying and managing antivirus solutions on the operating systems of fully managed database services.",
+        "Customers are responsible for provisioning, scaling, patching, and backups.",
+        "Customers are responsible for designing data structures and managing access controls.",
+        "Customers are responsible for monitoring and generating metrics for their data."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "dynamodb-definition-best-describes-001",
+      "question": "Which statement BEST describes Amazon DynamoDB?",
+      "options": [
+        "DynamoDB is a relational database service that provides complex SQL query capabilities.",
+        "DynamoDB is a fully managed graph database that requires server maintenance during scheduled downtime.",
+        "DynamoDB is a fully managed NoSQL key-value and document database that provides fast, predictable performance with seamless scalability.",
+        "DynamoDB is a column-oriented database that requires schema definition before storing data."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "in-memory-caching-definition-001",
+      "question": "Which definition BEST describes in-memory caching?",
+      "options": [
+        "A cloud-based service that stores data in memory for fast access, improving application performance and scalability while reducing database load",
+        "A networking solution that optimizes internet routing paths to reduce latency between user requests and cloud-based applications",
+        "A database management system that permanently stores all application data on solid-state drives for consistent retrieval speeds",
+        "A backup and recovery service that automatically creates snapshots of critical data every five minutes to prevent data loss"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "aws-backup-feature-centralized-policies-001",
+      "question": "What is a feature of AWS Backup?",
+      "options": [
+        "AWS Backup can only back up resources within a single AWS Region.",
+        "AWS Backup provides centralized backup policies and monitoring across multiple AWS accounts and Regions.",
+        "AWS Backup is limited to database services only.",
+        "AWS Backup requires manual configuration for each individual resource."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "elasticache-primary-benefit-in-memory-performance-001",
+      "question": "What is a primary benefit of using Amazon ElastiCache?",
+      "options": [
+        "Automatic scaling of underlying database storage",
+        "Complete replacement for relational databases",
+        "Improved application performance through in-memory caching",
+        "Built-in machine learning capabilities for data analysis"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "rds-definition-best-describes-001",
+      "question": "Which explanation BEST describes Amazon RDS?",
+      "options": [
+        "A NoSQL database system optimized for unstructured data",
+        "A fully managed service that helps set up, operate, and scale relational databases in the cloud",
+        "A data warehousing solution for analytical processing",
+        "A fully managed in-memory caching service that seamlessly integrates with Redis, Valkey, or Memcached"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "neptune-practical-use-connected-datasets-001",
+      "question": "What is a practical use of Amazon Neptune?",
+      "options": [
+        "Managing and querying highly connected datasets efficiently",
+        "Replacing traditional SQL databases for all workloads",
+        "Optimizing text search in large document databases",
+        "Providing real-time streaming analytics"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "aurora-use-case-commercial-database-replacement-001",
+      "question": "What is a possible use case for Amazon Aurora?",
+      "options": [
+        "Replacing high-cost commercial database engines with a more cost-effective solution that still provides enterprise-level performance and reliability",
+        "Processing unstructured data streams in real time without relational database constraints",
+        "Running temporary databases with minimal availability requirements for development environments",
+        "Storing static, rarely accessed data that requires minimal processing capabilities"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "documentdb-use-case-ecommerce-catalog-001",
+      "question": "What is a practical use case for Amazon DocumentDB (with MongoDB compatibility)?",
+      "options": [
+        "Running high-performance transactional banking applications with strict compliance requirements",
+        "Long-term archival storage of historical data with infrequent access patterns",
+        "Storing and managing a large product catalog for an ecommerce application",
+        "Real-time in-memory caching of web session data"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ec2-unmanaged-database-full-control-preference-001",
+      "question": "Which option describes a scenario where an unmanaged solution like a database installed directly onto an Amazon EC2 instance would be preferable to using a fully managed AWS database service?",
+      "options": [
+        "A developer needs full control over the database and access to its underlying operating system, database installation, and configuration.",
+        "A developer wants to scale a database instance based on workload patterns without worrying about licensing complications.",
+        "A developer has a database size smaller than the maximum limits imposed by Amazon RDS.",
+        "A developer wants AWS to handle routine database maintenance tasks like backups and patching."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "nosql-vs-relational-flexible-schema-001",
+      "question": "What is the primary way that NoSQL databases like Amazon DynamoDB differ from relational databases?",
+      "options": [
+        "Relational databases offer better performance for transactional workloads than any NoSQL solution.",
+        "NoSQL databases use flexible schema designs rather than the rigid table structures of relational databases.",
+        "Relational databases provide automatic scaling and NoSQL databases require manual scaling.",
+        "Relational databases require indexes on all queries, and NoSQL databases do not use indexes."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "dms-problem-minimize-migration-downtime-001",
+      "question": "Which problem does AWS Database Migration Service (AWS DMS) solve?",
+      "options": [
+        "Optimizing SQL queries to improve database performance",
+        "Minimizing application downtime during database migrations",
+        "Providing a graphical interface for database administrators to design tables",
+        "Creating automated database backup schedules"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "dynamodb-staffing-unpredictable-traffic-autoscaling-001",
+      "question": "A staffing resource company is building an application that must store employee information with unpredictable traffic patterns. Their application requires consistent performance at all times, and the development team wants to focus on features rather than database management tasks. Which Amazon DynamoDB capability BEST addresses the needs for this workload?",
+      "options": [
+        "Manual configuration of read/write capacity units",
+        "Auto scaling with provisioned capacity",
+        "Fixed storage limit allocation",
+        "Predefined schema enforcement"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ml-training-process-output-model-001",
+      "question": "Machine learning (ML) is a type of AI for training machines to perform complex tasks without explicit instructions. This training process involves finding patterns in vast amounts of historical data. What is produced as a result of the ML training process?",
+      "options": [
+        "An explicit ML rule book that dictates how to perform tasks",
+        "An ML model that can make predictions or decisions",
+        "An ML data report that summarizes the data",
+        "An ML database cataloging the types of data found"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "comprehend-car-dealership-customer-sentiment-001",
+      "question": "The owner of a car dealership wants to determine why her service department has lost business over the past year. She wants to analyze a large number of documented customer comments to better understand customer sentiment. Which AWS service would work well for this use case?",
+      "options": [
+        "Amazon Translate",
+        "Amazon Comprehend",
+        "Amazon Personalize",
+        "Amazon Textract"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "lex-healthcare-conversational-interface-001",
+      "question": "A healthcare company wants to add a conversational interface to its customer support application using a ready-made solution. Which AWS service could they choose?",
+      "options": [
+        "Amazon Translate",
+        "Amazon Personalize",
+        "Amazon Lex",
+        "Amazon Comprehend"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "polly-instructional-designer-text-to-speech-001",
+      "question": "An instructional designer is developing a new course on customer service skills. He wants to include several simulated calls to reinforce the learning. Because he doesn't have access to a recording studio, he needs a quick way to convert his scripts to speech. Which service would work well for this use case?",
+      "options": [
+        "Amazon Textract",
+        "Amazon Kendra",
+        "Amazon Translate",
+        "Amazon Polly"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sagemaker-ai-custom-ml-no-infrastructure-001",
+      "question": "A small tech company wants to develop their own customized machine learning (ML) model without managing the underlying infrastructure. The company is looking for a solution that both their data scientists and business analysts can use. Which AWS service should they choose?",
+      "options": [
+        "Amazon Kendra",
+        "Amazon SageMaker AI",
+        "Amazon EC2",
+        "Amazon Lex"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ml-framework-pytorch-definition-001",
+      "question": "A team of machine learning (ML) engineers is developing a new ML model for a highly specialized application. They need complete control over the ML training process. So, they are developing their own custom solution using the PyTorch ML framework. What is an ML framework?",
+      "options": [
+        "A software library with pre-built, optimized components",
+        "An Amazon EC2 instance that is optimized for ML training",
+        "An integrated development environment (IDE) that provides simplified access to the company's ML projects",
+        "A managed service pre-trained to perform specific functions"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "generative-ai-foundation-models-definition-001",
+      "question": "Generative AI is a type of deep learning powered by extremely large ML models that are pre-trained on vast collections of data. What are these models called?",
+      "options": [
+        "Generative models",
+        "Feature models",
+        "Massive models",
+        "Foundation models"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "bedrock-advertising-content-generation-001",
+      "question": "A large advertising agency wants to quickly integrate a new content generation feature into its existing enterprise-wide design application. The new feature needs to be able to generate both text and images. The agency doesn't want to manage any new infrastructure. Which service would work best for this use case?",
+      "options": [
+        "Amazon SageMaker JumpStart",
+        "Amazon Bedrock",
+        "Amazon Q Business",
+        "Amazon Q Developer"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "q-developer-software-deadline-code-001",
+      "question": "A software development company is working on a new product with a very tight deadline. The company needs a way to develop code faster without sacrificing reliability or security. Which service could best help this company meet its deadline?",
+      "options": [
+        "Amazon SageMaker JumpStart",
+        "Amazon Bedrock",
+        "Amazon Q Business",
+        "Amazon Q Developer"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "etl-data-pipelines-definition-001",
+      "question": "Data pipelines are automated assembly lines used to make the ETL process efficient and repeatable. What does ETL stand for?",
+      "options": [
+        "Explore, transfer, log",
+        "Extract, transform, load",
+        "Evaluate, test, launch",
+        "Export, translate, link"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "data-analytics-transformed-data-insights-001",
+      "question": "In the field of data analytics, analysts transform raw historical data into something useful. What are these analysts working to uncover with this transformed data?",
+      "options": [
+        "Hardware malfunctions",
+        "Programming errors and bugs",
+        "Personal customer information",
+        "Valuable insights and trends"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "data-pipeline-ingestion-kinesis-firehose-001",
+      "question": "A data analytics team is creating an automated data pipeline on AWS. Which AWS services could they choose for data ingestion? (Select TWO.)",
+      "options": [
+        "Amazon Redshift",
+        "Amazon Kinesis Data Streams",
+        "Amazon EMR",
+        "AWS Glue Data Catalog",
+        "Amazon Data Firehose"
+      ],
+      "correctIndices": [1, 4]
+    },
+    {
+      "id": "s3-unstructured-data-pipeline-storage-001",
+      "question": "The data analytics team must ingest vast amounts of unstructured data into its pipeline. Which AWS service is the BEST choice for storing this data?",
+      "options": [
+        "Amazon Athena",
+        "Amazon Redshift",
+        "Amazon Data Firehose",
+        "Amazon S3"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "glue-data-pipeline-processing-001",
+      "question": "Which AWS service is BEST suited for data processing in a data pipeline?",
+      "options": [
+        "AWS Glue",
+        "Amazon QuickSight",
+        "Amazon Data Firehose",
+        "Amazon S3"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "data-visualization-quicksight-opensearch-001",
+      "question": "Which AWS services could the data analytics team choose for data visualization? (Select TWO.)",
+      "options": [
+        "Amazon Data Firehose",
+        "Amazon QuickSight",
+        "Amazon Athena",
+        "AWS Glue",
+        "Amazon OpenSearch Service"
+      ],
+      "correctIndices": [1, 4]
+    },
+    {
+      "id": "data-pipeline-etl-efficient-repeatable-001",
+      "question": "The extract, transform, load (ETL) process is often used to provide clean and accessible data in a format that is usable by analytics tools and AI algorithms. How does a data pipeline improve this process?",
+      "options": [
+        "Data pipelines increase the amount of raw data collected.",
+        "Data pipelines make the ETL process more efficient and repeatable.",
+        "Data pipelines eliminate the need for data transformations.",
+        "Data pipelines reduce the variety of data sources used by ETL."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s3-redshift-data-lake-warehouse-001",
+      "question": "Data can come from many different sources. To provide insights, the data must be consolidated in a single location. There are two storage options for this. Data lakes store vast amounts of raw data, and data warehouses are optimized for business intelligence. Which AWS services are typically used as a data lake and data warehouse?",
+      "options": [
+        "Amazon S3 is a popular choice for data lakes, whereas Amazon Athena is a data warehouse service.",
+        "Amazon S3 is a popular choice for data lakes, whereas Amazon Redshift is a data warehouse service.",
+        "Amazon Redshift is a popular choice for data lakes, whereas Amazon S3 is a data warehouse service.",
+        "Amazon EMR is a popular choice for data lakes, whereas Amazon Redshift is a data warehouse service."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "bedrock-foundation-models-single-api-001",
+      "question": "Amazon Bedrock is a fully managed service that was specifically designed for working with large foundation models (FMs) and building generative AI applications. What does the service provide to access FMs from Amazon and leading AI startups?",
+      "options": [
+        "An open source repository",
+        "A single API",
+        "Free, unlimited use",
+        "Dedicated cloud storage"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "classical-programming-vs-machine-learning-001",
+      "question": "Both classical programming and machine learning can be used to train computers to perform tasks. What is the main difference between the two approaches?",
+      "options": [
+        "Classical programming requires more computational resources than machine learning, making it less efficient for complex tasks.",
+        "Classical programming is used for mathematical operations, whereas machine learning is exclusively used for pattern recognition in images and text.",
+        "Classical programming creates explicit rules for the computer to follow. In machine learning, computers make predictions using patterns learned from historical data.",
+        "Classical programming is used for simple tasks, whereas machine learning is reserved for extremely complex tasks."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "kinesis-financial-real-time-stock-data-001",
+      "question": "A financial services company is developing an application to analyze real-time stock data so its team of analysts can make immediate trading decisions. The company needs to ingest real-time stock market data without worrying about servers or scaling capacity. Which AWS service would meet their needs?",
+      "options": [
+        "Amazon QuickSight",
+        "Amazon EMR",
+        "Amazon Athena",
+        "Amazon Kinesis Data Streams"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sagemaker-ai-build-train-deploy-ml-001",
+      "question": "Which AWS service can be used to build, train, and deploy a customized machine learning (ML) model without worrying about the underlying infrastructure?",
+      "options": [
+        "Amazon SageMaker AI",
+        "Amazon EMR",
+        "Amazon Comprehend",
+        "Amazon Personalize"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "polly-text-to-speech-prebuilt-001",
+      "question": "A small development team is looking to add a feature to its application that converts text to speech. Which pre-built AWS AI service can be used for this task?",
+      "options": [
+        "Amazon Polly",
+        "Amazon Personalize",
+        "Amazon Comprehend",
+        "Amazon Textract"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "personalize-ecommerce-recommendations-001",
+      "question": "An e-commerce company wants to add a product recommendation engine to its online application to increase sales. The development team wants the recommendations to be relevant for each individual customer. Which pre-built AWS AI service would work well for this use case?",
+      "options": [
+        "Amazon Kendra",
+        "Amazon Lex",
+        "Amazon Comprehend",
+        "Amazon Personalize"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "foundation-models-characteristics-select-two-001",
+      "question": "Generative AI is a type of deep learning powered by extremely large machine learning (ML) models known as foundation models (FMs). What are characteristics of FMs? (Select TWO.)",
+      "options": [
+        "FMs can be adapted to perform multiple tasks.",
+        "FMs are trained to perform singular tasks.",
+        "FMs are pre-trained on vast collections of data.",
+        "FMs are only used to create images.",
+        "FMs are programmed with explicit rules."
+      ],
+      "correctIndices": [0, 2]
+    },
+    {
+      "id": "q-business-healthcare-generative-assistant-001",
+      "question": "A large healthcare organization wants to improve employee productivity. The company is searching for a pre-built generative AI assistant that can answer questions, help solve problems, and take actions using the data and expertise found in its information repositories. Which AWS service would work well for this use case?",
+      "options": [
+        "Amazon SageMaker JumpStart",
+        "Amazon Bedrock",
+        "Amazon Q Business",
+        "Amazon Q Developer"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "authz-banking-transfer-privileges-001",
+      "question": "After logging in to their online banking profile with their username and password, a customer attempts to transfer $10,000 from their savings to their checking account. The system checks if the customer has sufficient privileges to make transfers of this amount before proceeding. Which type of system check is this an example of?",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Encryption",
+        "Auditing"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "shared-responsibility-healthcare-rds-s3-data-001",
+      "question": "A healthcare company is preparing to deploy a web application on Amazon EC2 instances that will process sensitive patient data. The application will use Amazon RDS for database storage and Amazon S3 for file storage. The company's security team is discussing security responsibilities for the deployment. What is the customer's security responsibility in this scenario?",
+      "options": [
+        "Protecting the physical security of the data centers where the EC2 instances are hosted",
+        "Protecting sensitive patient data stored in Amazon S3 and Amazon RDS",
+        "Maintaining and patching the underlying hypervisor infrastructure for Amazon EC2",
+        "Replacing faulty hardware components that might affect EC2 instance availability"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mfa-root-user-verification-methods-001",
+      "question": "An administrator who creates an AWS account is provided with the root user credentials. To secure this highly privileged account, they should immediately set a strong password and enable multi-factor authentication (MFA). What does MFA require users to do?",
+      "options": [
+        "Change the password every 30 days.",
+        "Provide two or more verification methods to gain access.",
+        "Use a virtual private network (VPN) whenever logging in.",
+        "Have a credit card on file for identity verification."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "iam-temporary-access-roles-001",
+      "question": "AWS Identity and Access Management (IAM) provides users, groups, roles, and policies so you can configure access based on your company's specific operational and security needs. Which of these is specifically designed to provide temporary access to permissions?",
+      "options": [
+        "IAM users",
+        "IAM groups",
+        "IAM roles",
+        "IAM policies"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "iam-policy-s3-bucket-access-001",
+      "question": "A financial services company wants to give its accountants access to a particular Amazon S3 bucket. Which of these IAM controls is used to define this access?",
+      "options": [
+        "IAM user",
+        "IAM group",
+        "IAM role",
+        "IAM policy"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "secrets-manager-db-api-keys-001",
+      "question": "A software development team needs to centrally manage its database credentials and API keys on AWS. Which of these services should the team choose?",
+      "options": [
+        "AWS Identity and Access Management (IAM)",
+        "AWS IAM Identity Center",
+        "AWS Secrets Manager",
+        "AWS Systems Manager"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ddos-vs-dos-multiple-compromised-001",
+      "question": "In a denial of service (DoS) attack, an attacker floods a web application with excessive network traffic. Legitimate customer requests are denied if the web application becomes overloaded and can no longer respond. How is a distributed denial of service (DDoS) attack different?",
+      "options": [
+        "A DDoS attack distributes malware to end users instead of overwhelming network resources.",
+        "A DDoS attack distributes the incoming traffic across multiple servers to prevent service interruption.",
+        "A DDoS attack targets multiple websites simultaneously instead of focusing on a single target.",
+        "A DDoS attack uses multiple compromised computers and devices to launch the attack."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "boutique-ddos-protection-select-two-001",
+      "question": "An online boutique has recently suffered a series of targeted distributed denial of service (DDoS) attacks. The owner wants to enhance the security of the boutique's web application using AWS infrastructure. Which components can the boutique use to protect the web application on AWS from DDoS attacks? (Select TWO.)",
+      "options": [
+        "Auto scaling groups",
+        "Security groups",
+        "Compute instances",
+        "Public subnets",
+        "Elastic Load Balancing (ELB)"
+      ],
+      "correctIndices": [1, 4]
+    },
+    {
+      "id": "encryption-decryption-key-access-001",
+      "question": "Which processes involve locking and unlocking data with a special key so only authorized users can access it?",
+      "options": [
+        "Tokenization and masking",
+        "Encryption and decryption",
+        "Authentication and authorization",
+        "Hashing and salting"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "acm-data-in-transit-tax-001",
+      "question": "A tax preparation company needs to secure sensitive customer data moving from its database to its web application on AWS. Which of these services can help them secure the data in transit?",
+      "options": [
+        "Amazon S3",
+        "Amazon DynamoDB",
+        "Amazon Macie",
+        "AWS Certificate Manager (ACM)"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "detective-security-visualization-root-cause-001",
+      "question": "A security team at a legal firm has detected a threat to their AWS environment. To investigate the root cause over time, they need interactive visualizations of security data. Which AWS service is the BEST choice for this investigation?",
+      "options": [
+        "Amazon Inspector",
+        "Amazon GuardDuty",
+        "Amazon Detective",
+        "AWS Security Hub"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "security-hub-compliance-aggregate-findings-001",
+      "question": "A local government agency needs to prepare for an upcoming compliance audit. The agency needs to automatically aggregate security findings from multiple AWS services into one comprehensive view. Which of these services should the agency choose?",
+      "options": [
+        "Amazon Inspector",
+        "Amazon GuardDuty",
+        "Amazon Detective",
+        "AWS Security Hub"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "root-user-protect-select-two-001",
+      "question": "All AWS accounts are given an AWS account root user. The root user is the account owner and has full permissions to perform any actions. What are some ways to protect this powerful account? (Select TWO.)",
+      "options": [
+        "Associate a strong password with the account.",
+        "Delegate root user access to others.",
+        "Create multiple root users for redundancy.",
+        "Turn on multi-factor authentication (MFA).",
+        "Delete the root user after setting up AWS Identity and Access Management (IAM) users."
+      ],
+      "correctIndices": [0, 3]
+    },
+    {
+      "id": "authentication-employee-portal-login-001",
+      "question": "An employee wants to check their company's online employee portal to see how many vacation hours they have accrued. Before accessing their personal records, they enter their username and password to log in to the site. What happens during this login process?",
+      "options": [
+        "Authentication",
+        "Encryption",
+        "Detection",
+        "Authorization"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "shared-responsibility-aws-physical-security-001",
+      "question": "What is the responsibility of AWS under the AWS shared responsibility model?",
+      "options": [
+        "Managing physical security of data centers",
+        "Configuring security groups for Amazon EC2 instances",
+        "Encrypting customer data at rest",
+        "Setting up AWS Identity and Access Management (IAM) roles and policies"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "iam-least-privilege-concept-001",
+      "question": "With AWS Identity and Access Management (IAM) all actions are denied by default. When granting permissions, access should be provided only on a need-to-have basis. What is this concept called?",
+      "options": [
+        "Role-based access control",
+        "Permission boundary framework",
+        "Default deny policy",
+        "Principle of least privilege"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "aws-shield-ddos-free-001",
+      "question": "A small financial services company recently moved its online resources to AWS. The security team was concerned about protection from common, frequently occurring types of distributed denial of service (DDoS) attacks. Which AWS service automatically protects customers at no cost from DDoS attacks?",
+      "options": [
+        "Amazon Macie",
+        "AWS Shield",
+        "AWS Systems Manager",
+        "AWS Identity and Access Management (IAM)"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "encrypt-data-in-transit-ssl-tls-001",
+      "question": "Protecting sensitive customer data is a vital component of maintaining customer trust. This involves encrypting data at rest and in transit. What is used to encrypt data in transit?",
+      "options": [
+        "Strong passwords",
+        "Cryptographic keys",
+        "SSL/TLS certificates",
+        "Multi-factor authentication (MFA)"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "kms-centralized-encryption-keys-ecommerce-001",
+      "question": "A security team for a large ecommerce company needs a centralized way to create and manage the encryption keys that protect its data on AWS. Which of these services is the BEST fit for this team?",
+      "options": [
+        "AWS Certificate Manager (ACM)",
+        "AWS WAF",
+        "AWS Key Management Service (AWS KMS)",
+        "Amazon Macie"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "iam-group-designers-s3-inherit-001",
+      "question": "A large marketing firm has a standard set of permissions used to grant designers access to certain Amazon S3 buckets. The firm added a new S3 bucket that all designers need to access. Which AWS Identity and Access Management (IAM) control can the firm use to assign permissions that will be inherited by all of its designers?",
+      "options": [
+        "IAM group",
+        "IAM role",
+        "IAM policy",
+        "IAM user"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "iam-identity-center-sso-existing-idp-001",
+      "question": "A technology company is moving some of its resources to AWS. The company wants to provide single sign-on access for its employees on AWS using its existing identity source. Which service can help the company accomplish this?",
+      "options": [
+        "AWS IAM Identity Center",
+        "AWS Systems Manager",
+        "AWS Secrets Manager",
+        "AWS Identity and Access Management (IAM)"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "inspector-vulnerability-ec2-lambda-containers-001",
+      "question": "A security team for a large software development company needs to check multiple applications for security vulnerabilities and deviations from security best practices. The applications are running on Amazon EC2, AWS Lambda, and in containers. Which AWS service should they choose for the security assessments?",
+      "options": [
+        "Amazon Detective",
+        "Amazon GuardDuty",
+        "Amazon Inspector",
+        "AWS Security Hub"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "cloudwatch-ecommerce-ec2-select-three-001",
+      "question": "An ecommerce company is hosting their customer application on multiple Amazon EC2 instances. The application experiences fluctuating traffic and occasional performance issues that are impacting the customer experience. How can Amazon CloudWatch help the customer? (Select THREE.)",
+      "options": [
+        "CloudWatch dashboards can be customized to visualize the metrics, alarms, and data in a consolidated view.",
+        "CloudWatch alarms can be set up to alert when the Amazon EC2 utilization is too high for an extended period and automate more EC2 instances being created to share the load.",
+        "CloudWatch logs can collect data on the EC2 instances and application logs. The logs can gain insights on performance issues or application errors.",
+        "CloudWatch can deliver content to the edge locations, closer to where customers are located, to reduce latency.",
+        "CloudWatch can predict the items that customers will purchase and place those in the ecommerce application shopping cart in the buy again category.",
+        "CloudWatch can design architectures and create all the resources to minimize performance issues."
+      ],
+      "correctIndices": [0, 1, 2]
+    },
+    {
+      "id": "cloudtrail-s3-api-audit-logs-001",
+      "question": "A company wants to store the files that contain API activities for an AWS account in an Amazon S3 bucket. They want to retain these files for auditing and compliance. Which solution and feature would provide this capability?",
+      "options": [
+        "AWS CloudTrail events",
+        "AWS CloudTrail logs",
+        "AWS CloudTrail Insights",
+        "Amazon CloudWatch Logs"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "artifact-tasks-select-two-001",
+      "question": "Which tasks can you complete in AWS Artifact? (Select TWO.)",
+      "options": [
+        "Access AWS compliance reports on demand.",
+        "Consolidate and manage multiple AWS accounts within a central location.",
+        "Create users to permit people and applications to interact with AWS services and resources.",
+        "Set permissions for accounts by configuring service control policies (SCPs).",
+        "Review, accept, and manage agreements with AWS."
+      ],
+      "correctIndices": [0, 4]
+    },
+    {
+      "id": "config-ec2-approved-instance-types-001",
+      "question": "An enterprise customer with a large team of developers needs a way to ensure specific configuration guidelines for the developers when creating AWS resources. They want to assess and audit the AWS resources to make sure that the team is using the most cost-effective approved list of Amazon EC2 instances. Which AWS service would best fit the customer's need?",
+      "options": [
+        "AWS Artifact",
+        "AWS Audit Manager",
+        "AWS Config",
+        "AWS CloudTrail"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "scp-organizations-apply-select-two-001",
+      "question": "You are configuring service control policies (SCPs) in AWS Organizations. Which identities and resources can SCPs be applied to? (Select TWO.)",
+      "options": [
+        "AWS Identity and Access Management (IAM) users",
+        "AWS Identity and Access Management (IAM) groups",
+        "An individual member account",
+        "AWS Identity and Access Management (IAM) roles",
+        "An organizational unit (OU)"
+      ],
+      "correctIndices": [2, 4]
+    },
+    {
+      "id": "control-tower-multi-account-governance-001",
+      "question": "A government customer needs to set up and govern a secure, compliant, multi-account AWS environment. They want to make sure that employees comply with their approved requirements when creating new AWS accounts. Which AWS service would best fit the customer's need?",
+      "options": [
+        "AWS CloudTrail",
+        "AWS Control Tower",
+        "AWS Service Catalog",
+        "AWS License Manager"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "trusted-advisor-cost-security-best-practices-001",
+      "question": "An enterprise customer with a multi-Region AWS network is looking for ways to continuously evaluate and reduce costs while making sure that everything is secure and performing efficiently. They are also interested in learning AWS best practices to apply to their operations. Which solution would BEST meet their needs?",
+      "options": [
+        "AWS Trusted Advisor",
+        "AWS Identity and Access Management Access Analyzer",
+        "Amazon Inspector",
+        "AWS Shared Responsibility Model"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "trusted-advisor-continuous-evaluation-suggestions-001",
+      "question": "Which AWS service provides continuous evaluation and checks of your AWS resources, and provides suggestions to optimize costs, performance, security, and resilience?",
+      "options": [
+        "AWS Trusted Advisor",
+        "Amazon CloudWatch",
+        "AWS Artifact",
+        "AWS CloudTrail"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "customer-compliance-center-resources-001",
+      "question": "Where can customers go to find resources on AWS compliance—for example, information on customer compliance stories, answers to key compliance questions, and an auditing security checklist?",
+      "options": [
+        "Customer Compliance Center",
+        "AWS Organizations",
+        "AWS Artifact",
+        "AWS Management Console"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "artifact-compliance-reports-agreements-001",
+      "question": "Which AWS service provides a no-cost, on-demand access to AWS security and compliance reports and select online agreements?",
+      "options": [
+        "AWS CloudTrail",
+        "Amazon CloudWatch",
+        "AWS Trusted Advisor",
+        "AWS Artifact"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "control-tower-landing-zone-purpose-001",
+      "question": "What is the purpose of an AWS Control Tower landing zone?",
+      "options": [
+        "It is the enterprise-wide container that holds all your organizational units (OUs), accounts, users, and resources that you want to regulate for compliance.",
+        "It is a subsection of a virtual private cloud (VPC) where you can isolate resources and control access.",
+        "It is a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
+        "It filters inbound and outbound traffic to Amazon EC2 instances in a virtual private cloud (VPC)."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cloudwatch-ec2-metrics-scaling-001",
+      "question": "A sportswear company is hosting their application on Amazon EC2 instances. They want to collect metrics on their EC2 instances and they would like notifications when utilization passes thresholds. They also want to have an action configured to automate scaling up the number of EC2 instances when utilization surpasses their threshold. Which AWS service would best meet their needs?",
+      "options": [
+        "AWS CloudTrail",
+        "AWS Artifact",
+        "AWS Trusted Advisor",
+        "Amazon CloudWatch"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "organizations-billing-centralize-ous-001",
+      "question": "An enterprise customer has grown rapidly and is struggling to manage billing of their AWS resources and accounts. Every employee has created independent accounts with no centralized management or hierarchical groupings of accounts. The customer wants to roll up billing and centralize management into organizational units. Which AWS service would best meet this customer's need?",
+      "options": [
+        "AWS Trusted Advisor",
+        "AWS Service Catalog",
+        "AWS Organizations",
+        "An Availability Zone (AZ)"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "service-catalog-curated-self-service-001",
+      "question": "A financial company is looking for a solution to govern a curated set of AWS resources for their employees. When the employees need to select and start up a new AWS resource, they want to provide a self-service way to create, share, and deploy the AWS resources. Which AWS service would best meet their needs?",
+      "options": [
+        "AWS Artifact",
+        "AWS Health",
+        "AWS License Manager",
+        "AWS Service Catalog"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "organizations-scp-restrictions-001",
+      "question": "A customer is using AWS Organizations to centrally manage their company's accounts for billing to optimize and organize costs. They want to set up rules or restrictions on the AWS services, resources, and individual API actions that the users can access. Which feature would meet their needs?",
+      "options": [
+        "An AWS Identity and Access Management (IAM) user",
+        "A service control policy (SCP)",
+        "An organizational unit (OU)",
+        "A root account"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "cloudtrail-api-change-tracking-hybrid-001",
+      "question": "A financial company with a hybrid cloud solution wants to track changes made to their AWS resources both in the cloud and on premises. Specifically, they want to know who did what, and when. Which AWS service would best meet their needs?",
+      "options": [
+        "AWS CloudTrail",
+        "AWS Trusted Advisor",
+        "AWS Artifact",
+        "Amazon CloudWatch"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "license-manager-byol-001",
+      "question": "A customer is moving from on premises to the cloud and has decided to use the Bring Your Own License model (BYOL) approach for cost savings. They are concerned about managing the licenses, want a way to reduce the risk of noncompliance, and want to enforce license usage limits. Which solution would best meet their needs?",
+      "options": [
+        "AWS Organizations",
+        "AWS License Manager",
+        "AWS Control Tower",
+        "AWS Service Catalog"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "config-approved-compute-resources-research-001",
+      "question": "A research customer with a large team of developers needs a way to ensure specific configuration guidelines for the developers when creating AWS resources. They want a way to assess and audit the AWS resources to ensure that the team is using the most cost-effective approved list of compute resources. Which solution or feature would meet their needs?",
+      "options": [
+        "AWS Audit Manager",
+        "AWS Config",
+        "AWS Artifact",
+        "AWS CloudTrail"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "cost-drivers-healthcare-cto-001",
+      "question": "You are a cloud engineer for a healthcare company. The CTO wants to store patient records in the cloud and asks about cost drivers. Which answer BEST describes the key driving factors of cost for the AWS Cloud?",
+      "options": [
+        "The primary driving factors of cost are compute, storage, database, networking, and migration and transfer.",
+        "The only driving factor of cost is compute.",
+        "Although pricing factors into multiple service categories, the primary driving factors of cost are compute, storage, and data transfer.",
+        "The only driving factor of cost is storage."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "budgets-cost-threshold-alerts-001",
+      "question": "A government agency is getting started with managing their AWS Cloud costs. They want to set up notifications to alert them when costs exceed a certain threshold for any given month. Which AWS service would they use to achieve this task?",
+      "options": [
+        "AWS Cost Explorer",
+        "AWS Budgets",
+        "AWS Organizations",
+        "AWS Pricing Calculator"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "enterprise-support-tam-trusted-advisor-001",
+      "question": "A large organization is seeking an AWS Support Plan. The company has the following requirements: basic AWS Trusted Advisor security checks; a 15-minute response time for business-critical system down scenarios; a full set of AWS Trusted Advisor checks and prioritized recommendations by an AWS account team; and a dedicated Technical Account Manager (TAM) for consultative architectural and operational guidance. Which AWS Support Plan should the company choose based on these requirements?",
+      "options": [
+        "Basic Support",
+        "Developer Support",
+        "Business Support",
+        "Enterprise Support"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "marketplace-saas-datasets-select-two-001",
+      "question": "You are a new cloud solutions architect at a growing tech company. Your manager has asked you to explore the AWS Marketplace to find solutions that can help improve your company's operational efficiency and reduce costs. Based on what you've learned, which options are available on the AWS Marketplace? (Select TWO.)",
+      "options": [
+        "Software as a service (SaaS) applications",
+        "Cloud storage",
+        "Virtual machines (VMs)",
+        "Datasets and analytics tools",
+        "Hardware products for on-premises deployment"
+      ],
+      "correctIndices": [0, 3]
+    },
+    {
+      "id": "enterprise-support-cto-mission-critical-15min-001",
+      "question": "You are the chief technology officer of a large enterprise with mission-critical applications running on AWS. Your organization requires the highest level of support, including response times of 15 minutes or less when mission-critical systems are down. Which AWS support plan should you choose?",
+      "options": [
+        "Developer Support",
+        "Business Support",
+        "Enterprise Support",
+        "Basic Support"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "professional-services-security-audit-best-practices-001",
+      "question": "You are the technical lead for a mid-sized e-commerce company and are evaluating various support options for your AWS infrastructure. Your current challenges include optimizing database performance and incident response planning. You are also seeking technical consulting on best practices for security. Outside of standard AWS Support Plans, which support option is the BEST choice for getting advice on best practices for security and for conducting a security audit of your AWS environment?",
+      "options": [
+        "AWS Trust and Safety Team",
+        "AWS re:Post",
+        "AWS Professional Services",
+        "AWS Basic Support"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "pricing-calculator-migration-estimate-001",
+      "question": "An online retail company is interested in moving forward with the migration of an application, but they would like to estimate costs before diving in. Which tool or service can they use to estimate the cost of the specific AWS services and configurations that they need?",
+      "options": [
+        "AWS Organizations is a service that the company can use to centrally manage and govern their environment as they grow and scale their AWS resources.",
+        "AWS Pricing Calculator is a web-based tool that the company can use to configure cost estimates for their unique business needs.",
+        "With AWS Budgets, the company can monitor their aggregate utilization and coverage metrics.",
+        "AWS Cost Explorer is a tool that the company can use to view and analyze their costs and usage."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "edtech-cost-drivers-fundamental-select-three-001",
+      "question": "An EdTech company is considering moving their education application to the cloud. The company's chief financial officer (CFO) wants to understand how AWS services are priced and which factors will drive their cost. Although pricing varies based on several factors, which options are the fundamental drivers of cost with AWS? (Select THREE.)",
+      "options": [
+        "Support",
+        "Storage",
+        "Security",
+        "Inbound data transfer",
+        "Outbound data transfer",
+        "Compute"
+      ],
+      "correctIndices": [1, 4, 5]
+    },
+    {
+      "id": "organizations-consolidated-billing-multi-account-001",
+      "question": "You are part of a team that wants to monitor and manage costs of multiple AWS accounts across different departments within your organization. Which AWS service can you use to effectively manage and consolidate billing information for these accounts?",
+      "options": [
+        "AWS Billing and Cost Management dashboard",
+        "AWS Organizations",
+        "AWS Budgets",
+        "AWS Cost Explorer"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "marketplace-compliance-ready-regulations-001",
+      "question": "A large enterprise wants to find compliance-ready software solutions to make sure they meet industry regulations. They are exploring AWS services to help with this, and they want to implement the solution as quickly as possible. What option is the BEST fit for this enterprise and their requirements?",
+      "options": [
+        "Use self-support tools such as AWS Documentation.",
+        "Use AWS Shield to protect against distributed denial of service (DDoS) attacks.",
+        "Develop custom solutions in-house.",
+        "Find compliance-ready solutions in the AWS Marketplace."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "self-support-resources-select-three-001",
+      "question": "In addition to AWS Support Plans and other technical assistance options, AWS also provides access to self-support resources. Which options do AWS customers have available as self-support resources? (Select THREE.)",
+      "options": [
+        "AWS Blog",
+        "AWS Documentation, such as user guides for AWS services",
+        "SDK guides",
+        "AWS Trust and Safety Center",
+        "AWS Professional Services",
+        "AWS solutions architects"
+      ],
+      "correctIndices": [0, 1, 2]
+    },
+    {
+      "id": "aws-partner-benefit-funding-001",
+      "question": "Which option BEST describes a key benefit of being an AWS Partner?",
+      "options": [
+        "Dedicated AWS hardware",
+        "Early access to all AWS services",
+        "AWS Partner Funding benefits",
+        "Exclusive access to all AWS Training and Certification"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "aws-payment-models-select-three-001",
+      "question": "A global finance company currently has their information technology (IT) resources on-premises and is evaluating the AWS Cloud. The company is used to fixed capital expenditures and wants to understand how they would pay by moving to the AWS Cloud. Which choices BEST describe how customers pay for AWS? (Select THREE.)",
+      "options": [
+        "Save when you commit:",
+        "Pay as you go:",
+        "Pay less by using more:",
+        "Pay all upfront:",
+        "Save by using fixed expenses:",
+        "Sign fixed contracts:"
+      ],
+      "correctIndices": [0, 1, 2]
+    },
+    {
+      "id": "apn-role-build-market-sell-001",
+      "question": "Which option BEST describes the role of the AWS Partner Network (APN)?",
+      "options": [
+        "Helping businesses build, market, and sell solutions based in AWS",
+        "Providing customer support for AWS users",
+        "Offering certification for AWS users",
+        "Developing new AWS services and features"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "caf-platform-perspective-migration-001",
+      "question": "Which perspective of the AWS Cloud Adoption Framework (AWS CAF) includes principles and patterns for implementing new solutions in the cloud and migrating on-premises workloads to the new platform in the cloud? It uses a variety of architectural models to understand and communicate the structure of IT systems.",
+      "options": [
+        "Business perspective",
+        "Platform perspective",
+        "Operations perspective",
+        "People perspective"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "migration-strategy-repurchasing-different-product-001",
+      "question": "Which migration strategy involves moving to a different product?",
+      "options": [
+        "Refactoring",
+        "Retiring",
+        "Replatforming",
+        "Repurchasing"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "migration-evaluator-business-case-001",
+      "question": "A customer is getting started on their migration and is not sure how to build a business case to justify their move. Which solution would BEST meet the requirements?",
+      "options": [
+        "Migration Evaluator",
+        "AWS Application Discovery Service",
+        "AWS Application Migration Service",
+        "AWS Migration Hub"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "migration-hub-track-tasks-001",
+      "question": "A customer is looking for a tool to help centralize the view of all their migration tasks and help track their migration. Which solution would BEST meet the requirements?",
+      "options": [
+        "Migration Evaluator",
+        "AWS Application Discovery Service",
+        "AWS Application Migration Service",
+        "AWS Migration Hub"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sct-commercial-to-opensource-database-001",
+      "question": "An enterprise customer wants to migrate their on-premises databases to the AWS Cloud. They are interested in changing their current commercial database to an open source database to reduce licensing costs. They need help converting all the database objects to the new database type. Which AWS service would BEST fit the customer's need?",
+      "options": [
+        "AWS Database Migration Service (AWS DMS)",
+        "AWS Schema Conversion Tool (AWS SCT)",
+        "Migration Evaluator",
+        "AWS Migration Hub"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "datasync-onpremises-s3-scheduled-001",
+      "question": "A healthcare company is migrating large amounts of data between their on-premises storage and Amazon S3. They want to automate the process and be able to schedule the migration to off-peak times and be able to check on progress and task reporting. Which service would best meet their need to transfer the data?",
+      "options": [
+        "AWS DataSync",
+        "AWS Transfer Family",
+        "AWS Direct Connect",
+        "Transfer using the internet, no AWS service needed"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "caf-primary-function-001",
+      "question": "What is the primary function of the AWS Cloud Adoption Framework (AWS CAF)?",
+      "options": [
+        "It migrates on-premises databases and data to the AWS Cloud.",
+        "It provides tools to help accelerate the migration journey, organize resources, and align management during the transition.",
+        "It acts as a centralized hub to manage a company's migration to the AWS Cloud.",
+        "It is also known as the seven Rs or the seven migration strategies."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "migration-hub-media-migrate-modernize-001",
+      "question": "A media company is in the migrate and modernize phase of their migration and wants a centralized location to view their migration tasks and progress. Which migration service would BEST meet their needs?",
+      "options": [
+        "Migration Evaluator",
+        "AWS Application Migration Service",
+        "AWS Application Discovery Service",
+        "AWS Migration Hub"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "seven-rs-migration-strategies-001",
+      "question": "What are the seven migration strategies that are commonly used when customers migrate to the AWS Cloud?",
+      "options": [
+        "Business, People, Governance, Platform, Security, Operations, IT",
+        "Relocate, Rehost, Replatform, Refactor, Repurchase, Retain, and Retire",
+        "There are not seven, there are three (Assess, Mobilize, and Migrate and Modernize)",
+        "Relocate, Remediate, Retrofit, Refactor, Regrade, Retool, Remove"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "migration-evaluator-retail-cfo-001",
+      "question": "A retail company is just getting started with their migration to the AWS Cloud. They need help building a business case to secure funding from their chief financial officer (CFO) and stakeholders. Which migration service would BEST meet their needs?",
+      "options": [
+        "Migration Evaluator",
+        "AWS Application Discovery Service",
+        "AWS Migration Hub",
+        "AWS Application Migration Service"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "caf-people-change-management-001",
+      "question": "The migration team wants to make sure the organization considers a company-wide change management strategy for successful cloud adoption. Which Cloud Adoption Framework (CAF) perspective would they use?",
+      "options": [
+        "Security",
+        "Operations",
+        "People",
+        "Business"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "datasync-credit-card-offpeak-no-private-connection-001",
+      "question": "A credit card company is migrating large amounts of sensitive data from their on-premises storage to the AWS Cloud. They want to automate the process and schedule the migration during off peak times. They also want to be able to check on progress and task reporting. They do not have a dedicated private connection between their data center and the AWS Cloud. Which online migration solution would meet their needs?",
+      "options": [
+        "AWS Transfer Family",
+        "AWS Snowball Edge Storage Optimized Devices",
+        "AWS DataSync",
+        "Virtual private gateway"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "dms-managed-database-plan-assess-convert-migrate-001",
+      "question": "During their upcoming migration, the database administrator would like to move from their current database to an AWS managed database to offload some of the database administration. They would also like to use a tool to plan, assess, convert, and migrate the database. Which migration solution would BEST meet their needs?",
+      "options": [
+        "AWS Schema Conversion Tool (AWS SCT)",
+        "AWS Migration Hub",
+        "Migration Evaluator",
+        "AWS Database Migration Service (AWS DMS)"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mgn-environmental-modernize-reduce-costs-001",
+      "question": "An environmental agency is migrating their applications to the AWS Cloud. During the migration they also want to look for ways to modernize and reduce costs of their applications. Which migration service would BEST meet their needs?",
+      "options": [
+        "AWS Application Discovery Service",
+        "Migration Evaluator",
+        "AWS Application Migration Service",
+        "AWS Migration Hub"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "transfer-family-sftp-design-files-001",
+      "question": "An engineering company is migrating large amounts of proprietary intellectual property design files from their on-premises data center to the AWS Cloud. They want a service that has fully managed support for secure file transfers with several different protocols, like Secure File Transfer Protocol (SFTP) and File Transfer Protocol Secure (FTPS). Which online migration solution would meet their needs?",
+      "options": [
+        "AWS Direct Connect",
+        "AWS Snowball Edge Storage Optimized Devices",
+        "AWS Transfer Family",
+        "AWS DataSync"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "x-ray-debugging-performance-marketing-001",
+      "question": "A development team for a small marketing company needs a debugging and performance analysis tool to visualize their online application's behavior. The application is hosted on AWS. Which AWS service should this team choose?",
+      "options": [
+        "AWS X-Ray",
+        "AWS AppSync",
+        "AWS Amplify",
+        "AWS CodePipeline"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "amazon-connect-customer-service-ai-001",
+      "question": "A large automotive company wants to use the power of AI in its customer service center. They need a solution that includes call routing, recording, and analytics. Which AWS service can provide these capabilities?",
+      "options": [
+        "AWS Amplify",
+        "Amazon Simple Email Service (Amazon SES)",
+        "Amazon Connect",
+        "Amazon WorkSpaces"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "appstream-saas-access-employees-001",
+      "question": "An IT department needs to provide employees access to several software-as-a-service (SaaS) online applications. Which AWS service can provide this access?",
+      "options": [
+        "AWS IoT Core",
+        "Amazon AppStream 2.0",
+        "Amazon Connect",
+        "AWS AppSync"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "iot-solutions-examples-select-two-001",
+      "question": "Which options are Internet of Things (IoT) solutions? (Select TWO.)",
+      "options": [
+        "A mobile app to order food from a favorite restaurant",
+        "A wearable device that tracks steps per day on a smartphone",
+        "A smart TV that recommends shows based on viewing history",
+        "A Wi-Fi enabled plug that can be used to turn off lights remotely",
+        "An online banking application used to check account balances"
+      ],
+      "correctIndices": [1, 3]
+    },
+    {
+      "id": "well-architected-cicd-operational-excellence-001",
+      "question": "A development team is releasing frequent updates to an application hosted on AWS. Right now, each deployment requires manual steps that often result in downtime or inconsistent environments. What AWS practice from the Well-Architected Framework could help in this situation?",
+      "options": [
+        "Focus on securing their deployments (Security).",
+        "Use AWS resources more effectively during deployment (Performance Efficiency).",
+        "Automate deployments through a continuous integration and continuous delivery pipeline (Operational Excellence).",
+        "Reduce the cost of the infrastructure used for deployments (Cost Optimization)."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "well-architected-tool-purpose-001",
+      "question": "What is the purpose of the AWS Well-Architected Tool (AWS WA Tool)?",
+      "options": [
+        "To migrate workloads between AWS Regions",
+        "To assess and improve cloud workloads based on six key architectural pillars",
+        "To automate cost forecasting for cloud projects",
+        "To manage user permissions across AWS services"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "workspaces-remote-workforce-secure-001",
+      "question": "A small technology startup needs to provide its remote workforce with secure access to their work environment. The employees must be able to accomplish the same tasks as if they were on a physical office computer. Which AWS service can they use to provide this remote access?",
+      "options": [
+        "AWS AppSync",
+        "Amazon WorkSpaces",
+        "Amazon Connect",
+        "Amazon AppStream 2.0"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "iot-core-manufacturing-equipment-monitoring-001",
+      "question": "A manufacturing company needs a way to monitor its assembly-line equipment for any performance issues. Which AWS service can help them build a monitoring solution for the equipment?",
+      "options": [
+        "Amazon AppStream 2.0",
+        "AWS IoT Core",
+        "Amazon Connect",
+        "AWS Well-Architected Tool"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "amplify-fullstack-auth-storage-001",
+      "question": "A developer is working on a full-stack application hosted on AWS. They are interested in streamlining the development process by quickly adding features like authentication and storage with minimal infrastructure management. Which AWS service would provide the best solution for the developer's needs?",
+      "options": [
+        "AWS CodePipeline",
+        "AWS Amplify",
+        "AWS Well-Architected Tool",
+        "AWS AppSync"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "well-architected-reliability-multi-az-001",
+      "question": "A startup is hosting a critical web application on a single Amazon EC2 instance in one Availability Zone. After a brief outage, they decide to reevaluate their architecture. What practice from the AWS Well-Architected Framework could improve this situation?",
+      "options": [
+        "Scale up the instance to handle more traffic (Performance Efficiency).",
+        "Reduce resource usage to avoid overprovisioning (Cost Optimization).",
+        "Increase the instance's firewall protection (Security).",
+        "Deploy instances across multiple Availability Zones for fault tolerance (Reliability)."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ses-marketing-emails-engagement-001",
+      "question": "The owner of a large hardware company wants to automate and optimize the company's marketing emails to enhance customer engagement. Which AWS service would work well for this use case?",
+      "options": [
+        "AWS Amplify",
+        "Amazon AppStream 2.0",
+        "Amazon Simple Email Service (Amazon SES)",
+        "Amazon Connect"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ec2-rightsize-low-cpu-usage-001",
+      "question": "A company is using a large Amazon EC2 instance type for a low-traffic website, but monitoring shows CPU usage rarely exceeds 10 percent. What is a good next step?",
+      "options": [
+        "Automate the scaling of EC2 instances based on traffic.",
+        "Decrease the number of instances to save money.",
+        "Rightsize the EC2 instance to a smaller type to match the actual workload.",
+        "Upgrade the EC2 instance for better data protection."
+      ],
+      "correctIndex": 2
     }
   ]
 }

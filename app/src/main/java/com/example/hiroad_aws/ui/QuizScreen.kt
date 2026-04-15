@@ -1,6 +1,7 @@
 package com.example.hiroad_aws.ui
 
 import androidx.activity.compose.BackHandler
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -9,25 +10,32 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.CheckboxDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.RadioButton
+import androidx.compose.material3.RadioButtonDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -43,6 +51,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.hiroad_aws.data.ChoiceQuestion
@@ -121,41 +130,68 @@ fun QuizScreen(
         }
     }
 
+    val quizBarColors = TopAppBarDefaults.topAppBarColors(
+        containerColor = MaterialTheme.colorScheme.inverseSurface,
+        titleContentColor = MaterialTheme.colorScheme.inverseOnSurface,
+        scrolledContainerColor = MaterialTheme.colorScheme.inverseSurface,
+        navigationIconContentColor = MaterialTheme.colorScheme.primary,
+        actionIconContentColor = MaterialTheme.colorScheme.primary,
+    )
+
     Scaffold(
         modifier = modifier.fillMaxSize(),
+        containerColor = MaterialTheme.colorScheme.background,
         topBar = {
-            CenterAlignedTopAppBar(
-                title = {
-                    Text(
-                        text = subtitle,
-                        style = MaterialTheme.typography.titleMedium,
-                        fontWeight = FontWeight.SemiBold,
-                    )
-                },
-                navigationIcon = {
-                    IconButton(onClick = onExitToHome) {
+            Column {
+                CenterAlignedTopAppBar(
+                    title = {
                         Text(
-                            text = "Home",
-                            style = MaterialTheme.typography.labelLarge,
-                            color = MaterialTheme.colorScheme.primary,
+                            text = subtitle,
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.SemiBold,
                         )
-                    }
-                },
-            )
+                    },
+                    navigationIcon = {
+                        IconButton(onClick = onExitToHome) {
+                            Text(
+                                text = "Home",
+                                style = MaterialTheme.typography.labelLarge,
+                                fontWeight = FontWeight.SemiBold,
+                                color = MaterialTheme.colorScheme.primary,
+                            )
+                        }
+                    },
+                    colors = quizBarColors,
+                )
+                HorizontalDivider(
+                    thickness = 3.dp,
+                    color = MaterialTheme.colorScheme.primary,
+                )
+            }
         },
     ) { innerPadding ->
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(innerPadding)
+            .navigationBarsPadding()
             .padding(horizontal = 20.dp, vertical = 8.dp)
             .verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
         if (roundOrder.isNotEmpty()) {
+            val progress = (roundIndex + 1).toFloat() / roundOrder.size.toFloat()
+            LinearProgressIndicator(
+                progress = { progress },
+                modifier = Modifier.fillMaxWidth(),
+                color = MaterialTheme.colorScheme.primary,
+                trackColor = MaterialTheme.colorScheme.surfaceContainerHigh,
+                strokeCap = StrokeCap.Round,
+            )
             Text(
                 text = "Question ${roundIndex + 1} of ${roundOrder.size}",
                 style = MaterialTheme.typography.labelMedium,
+                fontWeight = FontWeight.Medium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
@@ -172,7 +208,7 @@ fun QuizScreen(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.Center,
                 ) {
-                    CircularProgressIndicator()
+                    CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
                 }
             }
             current == null -> {
@@ -193,7 +229,7 @@ fun QuizScreen(
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.Center,
                         ) {
-                            CircularProgressIndicator()
+                            CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
                         }
                     }
                 }
@@ -272,7 +308,9 @@ private fun ChoiceQuestionContent(
 
     Text(
         text = q.question,
-        style = MaterialTheme.typography.bodyLarge,
+        style = MaterialTheme.typography.titleMedium,
+        fontWeight = FontWeight.Medium,
+        color = MaterialTheme.colorScheme.onSurface,
     )
     Spacer(modifier = Modifier.height(4.dp))
 
@@ -307,6 +345,7 @@ private fun ChoiceQuestionContent(
                 },
             shape = RoundedCornerShape(12.dp),
             colors = CardDefaults.elevatedCardColors(containerColor = containerColor),
+            elevation = CardDefaults.elevatedCardElevation(defaultElevation = 2.dp),
         ) {
             Row(
                 modifier = Modifier
@@ -320,12 +359,20 @@ private fun ChoiceQuestionContent(
                         checked = isSelected,
                         onCheckedChange = null,
                         enabled = !revealed,
+                        colors = CheckboxDefaults.colors(
+                            checkedColor = MaterialTheme.colorScheme.primary,
+                            uncheckedColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                        ),
                     )
                 } else {
                     RadioButton(
                         selected = isSelected,
                         onClick = null,
                         enabled = !revealed,
+                        colors = RadioButtonDefaults.colors(
+                            selectedColor = MaterialTheme.colorScheme.primary,
+                            unselectedColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                        ),
                     )
                 }
                 Text(
@@ -361,12 +408,22 @@ private fun ChoiceQuestionContent(
             onClick = onReveal,
             enabled = canSubmitChoice(displayCorrectIndices, selectedIndices) && !revealed,
             modifier = Modifier.weight(1f),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.primary,
+                contentColor = MaterialTheme.colorScheme.onPrimary,
+            ),
+            shape = RoundedCornerShape(10.dp),
         ) {
             Text("Check answer")
         }
         OutlinedButton(
             onClick = onNext,
             modifier = Modifier.weight(1f),
+            colors = ButtonDefaults.outlinedButtonColors(
+                contentColor = MaterialTheme.colorScheme.primary,
+            ),
+            border = BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary),
+            shape = RoundedCornerShape(10.dp),
         ) {
             Text("Next")
         }
@@ -391,7 +448,9 @@ private fun MatchingQuestionContent(
 
     Text(
         text = mq.question,
-        style = MaterialTheme.typography.bodyLarge,
+        style = MaterialTheme.typography.titleMedium,
+        fontWeight = FontWeight.Medium,
+        color = MaterialTheme.colorScheme.onSurface,
     )
     Spacer(modifier = Modifier.height(4.dp))
     Text(
@@ -417,6 +476,7 @@ private fun MatchingQuestionContent(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp),
             colors = CardDefaults.elevatedCardColors(containerColor = containerColor),
+            elevation = CardDefaults.elevatedCardElevation(defaultElevation = 2.dp),
         ) {
             Column(
                 modifier = Modifier
@@ -434,6 +494,11 @@ private fun MatchingQuestionContent(
                         onClick = { if (!revealed) expanded = true },
                         enabled = !revealed,
                         modifier = Modifier.fillMaxWidth(),
+                        colors = ButtonDefaults.outlinedButtonColors(
+                            contentColor = MaterialTheme.colorScheme.primary,
+                        ),
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+                        shape = RoundedCornerShape(8.dp),
                     ) {
                         Text(
                             text = when (selectedDefIndex) {
@@ -488,12 +553,22 @@ private fun MatchingQuestionContent(
             onClick = onReveal,
             enabled = canSubmitMatching(matchSelections.toList()) && !revealed,
             modifier = Modifier.weight(1f),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.primary,
+                contentColor = MaterialTheme.colorScheme.onPrimary,
+            ),
+            shape = RoundedCornerShape(10.dp),
         ) {
             Text("Check answer")
         }
         OutlinedButton(
             onClick = onNext,
             modifier = Modifier.weight(1f),
+            colors = ButtonDefaults.outlinedButtonColors(
+                contentColor = MaterialTheme.colorScheme.primary,
+            ),
+            border = BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary),
+            shape = RoundedCornerShape(10.dp),
         ) {
             Text("Next")
         }
